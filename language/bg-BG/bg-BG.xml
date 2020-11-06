@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metafile version="2.5"  client="site">
+	<name>Български (България)</name>
+    <version>2.5.7.1</version>
+    <creationDate>2012-03-27</creationDate>
+	<author>Joomla! Bulgaria</author>
+	<authorEmail>joomla@yboev.eu</authorEmail>
+	<authorurl></authorurl>
+	<copyright>Copyright (C) 2005 - 2012 Open Source Matters &amp; Joomla! Bulgaria. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later</license>
+	<description>Превод на Джумла! на български език.</description>
+	<files>
+		<filename>bg-BG.com_contact.ini</filename>
+		<filename>bg-BG.com_content.ini</filename>
+		<filename>bg-BG.com_finder.ini</filename>
+		<filename>bg-BG.com_mailto.ini</filename>
+		<filename>bg-BG.com_media.ini</filename>
+		<filename>bg-BG.com_messages.ini</filename>
+		<filename>bg-BG.com_newsfeeds.ini</filename>
+		<filename>bg-BG.com_search.ini</filename>
+		<filename>bg-BG.com_users.ini</filename>
+		<filename>bg-BG.com_weblinks.ini</filename>
+		<filename>bg-BG.com_wrapper.ini</filename>
+		<filename>bg-BG.files_joomla.sys.ini</filename>
+		<filename>bg-BG.finder_cli.ini</filename>
+		<filename>bg-BG.ini</filename>
+		<filename>bg-BG.lib_joomla.ini</filename>
+		<filename>bg-BG.localise.php</filename>
+		<filename>bg-BG.mod_articles_archive.ini</filename>
+		<filename>bg-BG.mod_articles_archive.sys.ini</filename>
+		<filename>bg-BG.mod_articles_categories.ini</filename>
+		<filename>bg-BG.mod_articles_categories.sys.ini</filename>
+		<filename>bg-BG.mod_articles_category.ini</filename>
+		<filename>bg-BG.mod_articles_category.sys.ini</filename>
+		<filename>bg-BG.mod_articles_latest.ini</filename>
+		<filename>bg-BG.mod_articles_latest.sys.ini</filename>
+		<filename>bg-BG.mod_articles_news.ini</filename>
+		<filename>bg-BG.mod_articles_news.sys.ini</filename>
+		<filename>bg-BG.mod_articles_popular.ini</filename>
+		<filename>bg-BG.mod_articles_popular.sys.ini</filename>
+		<filename>bg-BG.mod_banners.ini</filename>
+		<filename>bg-BG.mod_banners.sys.ini</filename>
+		<filename>bg-BG.mod_breadcrumbs.ini</filename>
+		<filename>bg-BG.mod_breadcrumbs.sys.ini</filename>
+		<filename>bg-BG.mod_custom.ini</filename>
+		<filename>bg-BG.mod_custom.sys.ini</filename>
+		<filename>bg-BG.mod_feed.ini</filename>
+		<filename>bg-BG.mod_feed.sys.ini</filename>
+		<filename>bg-BG.mod_finder.ini</filename>
+		<filename>bg-BG.mod_finder.sys.ini</filename>
+		<filename>bg-BG.mod_footer.ini</filename>
+		<filename>bg-BG.mod_footer.sys.ini</filename>
+		<filename>bg-BG.mod_languages.ini</filename>
+		<filename>bg-BG.mod_languages.sys.ini</filename>
+		<filename>bg-BG.mod_login.ini</filename>
+		<filename>bg-BG.mod_login.sys.ini</filename>
+		<filename>bg-BG.mod_menu.ini</filename>
+		<filename>bg-BG.mod_menu.sys.ini</filename>
+		<filename>bg-BG.mod_random_image.ini</filename>
+		<filename>bg-BG.mod_random_image.sys.ini</filename>
+		<filename>bg-BG.mod_related_items.ini</filename>
+		<filename>bg-BG.mod_related_items.sys.ini</filename>
+		<filename>bg-BG.mod_search.ini</filename>
+		<filename>bg-BG.mod_search.sys.ini</filename>
+		<filename>bg-BG.mod_stats.ini</filename>
+		<filename>bg-BG.mod_stats.sys.ini</filename>
+		<filename>bg-BG.mod_syndicate.ini</filename>
+		<filename>bg-BG.mod_syndicate.sys.ini</filename>
+		<filename>bg-BG.mod_users_latest.ini</filename>
+		<filename>bg-BG.mod_users_latest.sys.ini</filename>
+		<filename>bg-BG.mod_weblinks.ini</filename>
+		<filename>bg-BG.mod_weblinks.sys.ini</filename>
+		<filename>bg-BG.mod_whosonline.ini</filename>
+		<filename>bg-BG.mod_whosonline.sys.ini</filename>
+		<filename>bg-BG.mod_wrapper.ini</filename>
+		<filename>bg-BG.mod_wrapper.sys.ini</filename>
+		<filename>bg-BG.tpl_atomic.ini</filename>
+		<filename>bg-BG.tpl_atomic.sys.ini</filename>
+		<filename>bg-BG.tpl_beez_20.ini</filename>
+		<filename>bg-BG.tpl_beez_20.sys.ini</filename>
+		<filename>bg-BG.tpl_beez5.ini</filename>
+		<filename>bg-BG.tpl_beez5.sys.ini</filename>
+	</files>
+	<metadata>
+		<name>Български (България)</name>
+		<tag>bg-BG</tag>
+		<rtl>0</rtl>
+		<locale>bg-BG.UTF-8, bg-BG.utf8, bg_BG.UTF-8, bg_BG.utf8, bgr-BGR.UTF-8, bgr-BGR.utf8, bgr_BGR.UTF-8, bgr_BGR.utf8, bg.UTF-8, bg.utf8, bgr.UTF-8, bgr.utf8, bulgarian.UTF-8, bulgarian.utf8, bulgaria.UTF-8, bulgaria.utf8, bg-BG, bgr-BGR, bgr_BGR, bg_BG</locale>
+		<firstDay>0</firstDay>
+	</metadata>
+	<params />
+</metafile>

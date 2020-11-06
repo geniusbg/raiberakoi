@@ -1,0 +1,31 @@
+.beautifulck.cornerright_fr {
+	position: relative;
+	z-index: 100;
+}
+
+.beautifulck.cornerright_fr .beautifulckbg {
+	position: absolute;
+	z-index: 101;
+	height: 99px;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.beautifulck.cornerright_fr.pink .beautifulckbg {background-image: url(images/cornerright_fr_pink.png);}
+.beautifulck.cornerright_fr.red .beautifulckbg {background-image: url(images/cornerright_fr_red.png);}
+.beautifulck.cornerright_fr.orange .beautifulckbg {background-image: url(images/cornerright_fr_orange.png);}
+.beautifulck.cornerright_fr.yellow .beautifulckbg {background-image: url(images/cornerright_fr_yellow.png);}
+.beautifulck.cornerright_fr.green .beautifulckbg {background-image: url(images/cornerright_fr_green.png);}
+.beautifulck.cornerright_fr.blue .beautifulckbg {background-image: url(images/cornerright_fr_blue.png);}
+.beautifulck.cornerright_fr.grey .beautifulckbg {background-image: url(images/cornerright_fr_grey.png);}
+
+.beautifulck.cornerright_fr h3 {
+	position: absolute;
+	z-index: 103;
+	border: none !important;
+}
+
+.beautifulck.cornerright_fr .beautifulck_content {
+    position: relative;
+    z-index: 110;
+}

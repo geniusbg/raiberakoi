@@ -1,0 +1,55 @@
+.icon-48-templates {
+	background-image: url(../images/l_com_templateck.png);
+	padding-left:60px!important;
+}
+
+.icon-48-template {
+	background-image: url(../images/l_com_templateck.png);
+	padding-left:60px!important;
+}
+
+.adminformlist li {
+    list-style: none;
+}
+
+/* for Joomla 3.x */
+.icon-installGabarit  {
+    width: 14px;
+    height: 14px;
+    background: url(../images/import.png) center bottom no-repeat;
+}
+
+.icon-exportGabarit  {
+    width: 14px;
+    height: 14px;
+    background: url(../images/export.png) center bottom no-repeat;
+}
+
+.icon-installTheme   {
+    width: 14px;
+    height: 14px;
+    background: url(../images/install.png) center bottom no-repeat;
+}
+
+.icon-copyTemplate   {
+    width: 14px;
+    height: 14px;
+    background: url(../images/copytemplate.png) center bottom no-repeat;
+}
+
+/* for Joomla 2.5 */
+.icon-32-installGabarit  {
+    background: url(../images/import_32.png) center bottom no-repeat;
+}
+
+.icon-32-exportGabarit  {
+    background: url(../images/export_32.png) center bottom no-repeat;
+}
+
+.icon-32-installTheme   {
+    background: url(../images/install_32.png) center bottom no-repeat;
+}
+
+.icon-32-copyTemplate   {
+    background: url(../images/copytemplate_32.png) center bottom no-repeat;
+}

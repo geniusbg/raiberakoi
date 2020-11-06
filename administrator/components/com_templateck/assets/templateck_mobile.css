@@ -1,0 +1,350 @@
+/**
+ * @copyright	Copyright (C) 2011 Cédric KEIFLIN alias ced1870
+ * http://www.template-creator.com
+ * Component Template Creator CK
+ * @license		GNU/GPL
+ * */
+
+.clr {
+    clear: both;
+}
+
+
+/*------------------
+-- preview et animations--
+-------------------------*/
+#mobilewrapperbg {
+	position: relative;
+	margin: 0 auto;
+	width: 382px;
+	height:723px;
+	background: url(../images/mobile/iphone.png) center center no-repeat;
+	-webkit-transition: all 0.3s ease-out;  /* Saf3.2+, Chrome */
+     -moz-transition: all 0.3s ease-out;  /* FF4+ */
+      -ms-transition: all 0.3s ease-out;  /* IE10 */
+       -o-transition: all 0.3s ease-out;  /* Opera 10.5+ */
+          transition: all 0.3s ease-out;
+}
+
+#mobilewrapper {
+	position: relative;
+	top: 126px;
+	left: 33px;
+	width: 320px;
+	height:480px;
+	-webkit-transition: all 0.3s ease-out;  /* Saf3.2+, Chrome */
+     -moz-transition: all 0.3s ease-out;  /* FF4+ */
+      -ms-transition: all 0.3s ease-out;  /* IE10 */
+       -o-transition: all 0.3s ease-out;  /* Opera 10.5+ */
+          transition: all 0.3s ease-out;
+}
+
+#mobilewrapperbg.iphoneportrait, #mobilewrapperbg.iphonelandscape {
+	width: 382px;
+	height: 723px;
+}
+
+#mobilewrapperbg.iphoneportrait #mobilewrapper {
+	width: 320px;
+	height: 480px;
+	top: 126px;
+	left: 33px;
+}
+
+#mobilewrapperbg.iphonelandscape #mobilewrapper {
+	width: 480px;
+	height: 320px;
+	top: 206px;
+	left: -47px;
+	-webkit-transform: rotate(-90deg);  
+     -moz-transform: rotate(-90deg);    
+      -ms-transform: rotate(-90deg);     
+          transform: rotate(-90deg); 
+}
+
+#mobilewrapperbg.iphoneportrait {
+	-webkit-transform: rotate(0deg);  
+     -moz-transform: rotate(0deg);    
+      -ms-transform: rotate(0deg);     
+          transform: rotate(0deg); 
+
+}
+
+#mobilewrapperbg.iphonelandscape {
+	-webkit-transform: rotate(90deg);  
+     -moz-transform: rotate(90deg);    
+      -ms-transform: rotate(90deg);     
+          transform: rotate(90deg); 
+			
+}
+
+/** tablet640 **/
+#mobilewrapperbg.tablet640 {
+	width: 830px;
+	height: 1055px;
+	background: url(../images/mobile/ipad640.jpg) center center no-repeat;
+}
+
+#mobilewrapperbg.tablet640 #mobilewrapper {
+	width: 640px;
+	height: 854px;
+	top: 101px;
+	left: 95px;
+}
+
+#mobilewrapperbg.ipadportrait, #mobilewrapperbg.ipadlandscape {
+	width: 996px;
+	height: 1266px;
+	background: url(../images/mobile/ipad.jpg) center center no-repeat;
+}
+
+#mobilewrapperbg.ipadportrait {
+	-webkit-transform: rotate(0deg);  
+     -moz-transform: rotate(0deg);    
+      -ms-transform: rotate(0deg);     
+          transform: rotate(0deg); 
+}
+
+#mobilewrapperbg.ipadlandscape {
+	-webkit-transform: rotate(90deg);  
+     -moz-transform: rotate(90deg);    
+      -ms-transform: rotate(90deg);     
+          transform: rotate(90deg); 
+}
+
+#mobilewrapperbg.ipadportrait #mobilewrapper {
+	width: 768px;
+	height: 1024px;
+	top: 121px;
+	left: 114px;
+}
+
+#mobilewrapperbg.ipadlandscape #mobilewrapper {
+	width: 1024px;
+	height: 768px;
+	top: 250px;
+	left: -15px;
+	-webkit-transform: rotate(-90deg);  
+     -moz-transform: rotate(-90deg);    
+      -ms-transform: rotate(-90deg);     
+          transform: rotate(-90deg); 
+}
+
+
+/*---------------------------
+-- mise en page --
+--------------------------*/
+div.blocresolution {
+	float: left;
+	margin: 0 10px;
+}	
+
+.resolution-title {
+	text-align: center;
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.ckbloc {
+	width: 300px;
+        height: 60px;
+	margin: 2px;
+        padding: 5px;
+	color: #0A71A5;
+	text-align: center;
+	font-size: 14px;
+	font-weight: normal;
+        background: url(../images/mobile/module_default.png) center center no-repeat;
+}
+
+.ckbloc:hover {
+	background-color: #666;
+	cursor: pointer;
+}
+
+.horiznav {
+	background: url(../images/mobile/menu_default.png) center center no-repeat;
+}
+.horiznav[ckmobile=mobile_default] {background-image: url(../images/mobile/menu_default.png)}
+.horiznav[ckmobile=mobile_hide] {background-image: url(../images/mobile/menu_hide.png)}
+.horiznav[ckmobile=mobile_notaligned] {background-image: url(../images/mobile/menu_not_aligned.png)}
+.horiznav[ckmobile=mobile_alignhalf] {background-image: url(../images/mobile/menu_2x2.png)}
+
+.singlemodule {
+	background: url(../images/mobile/module_default.png) center center no-repeat;
+}
+.singlemodule[ckmobile=mobile_default] {background-image: url(../images/mobile/module_default.png)}
+.singlemodule[ckmobile=mobile_hide] {background-image: url(../images/mobile/module_hide.png)}
+
+
+.flexiblemodules {
+	background: url(../images/mobile/modules_default.png) center center no-repeat;
+}
+.flexiblemodules[ckmobile=mobile_default] {background-image: url(../images/mobile/modules_default.png)}
+.flexiblemodules[ckmobile=mobile_hide] {background-image: url(../images/mobile/modules_hide.png)}
+.flexiblemodules[ckmobile=mobile_notaligned] {background-image: url(../images/mobile/modules_not_aligned.png)}
+.flexiblemodules[ckmobile=mobile_alignhalf] {background-image: url(../images/mobile/modules_2x2.png)}
+
+.mainbanner {
+	background: url(../images/mobile/banner_default.png) center center no-repeat;
+}
+.mainbanner[ckmobile=mobile_hide] {background-image: url(../images/mobile/banner_hide.png)}
+.mainbanner[ckmobile=mobile_notaligned] {background-image: url(../images/mobile/banner_not_aligned.png)}
+
+.maincontent {
+	background: url(../images/mobile/content_default.png) center center no-repeat;
+}
+.maincontent[ckmobile=mobile_default] {background-image: url(../images/mobile/content_default.png)}
+.maincontent[ckmobile=mobile_notaligned] {background-image: url(../images/mobile/content_not_aligned.png)}
+.maincontent[ckmobile=mobile_lefttop] {background-image: url(../images/mobile/content_lefttop.png);}
+.maincontent[ckmobile=mobile_lefthidden] {background-image: url(../images/mobile/content_lefthidden.png);}
+.maincontent[ckmobile=mobile_rightbottom] {background-image: url(../images/mobile/content_rightbottom.png);}
+.maincontent[ckmobile=mobile_righthidden] {background-image: url(../images/mobile/content_righthidden.png);}
+
+
+
+
+
+
+/*---------------------
+	Styles de popup
+-----------------------*/
+
+.ckpopup {
+    position: fixed;
+    z-index: 101;
+    display: none;
+    left: 50%;
+    margin-left: -400px;
+    top: 50%;
+    margin-top: -250px;
+    height: 450px;
+    width: 810px;
+    padding: 0px;
+    background: #f4f4f4 url(../images/fondpopup.png) left top repeat-x;
+    -moz-box-shadow: 0 0 15px #888;
+    -webkit-box-shadow: 0 0 15px#888;
+    box-shadow: 0 0 15px #888;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+}
+
+.ckpopuptitle {
+    font-size: 18px;
+    color: #777777;
+    width: 400px;
+    margin: 10px 0 0 15px;
+    float: left;
+}
+
+.ckpopuplogo {
+    background: url(../images/logo_templateck_48.png) left top no-repeat;
+    width: 215px;
+    height: 48px;
+    margin: 10px 40px 0 0;
+    top: 0px;
+    float: right;
+}
+
+
+.ckclose {
+    display: block;
+    float: right;
+    width: 60px;
+    height: 45px;
+    color: #c1c1c1;
+    padding-top: 25px;
+    text-align: center;
+    margin: 10px 10px 0 0;
+    background-position: 20px 0px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-image: url(../images/cancel.png);
+}
+
+.ckclose:hover {
+    color: #fff;
+    background-image: url(../images/cancel_hover.png);
+}
+
+.ckclose.cksave {
+    background-image: url(../images/validate.png);
+}
+
+.ckclose.cksave:hover {
+    background-image: url(../images/validate_hover.png);
+}
+
+.ckclose.ckcopy {
+    background-image: url(../images/copy.png);
+}
+
+.ckclose.ckcopy:hover {
+    background-image: url(../images/copy_hover.png);
+}
+
+.ckclose.ckpaste {
+    background-image: url(../images/paste.png);
+}
+
+.ckclose.ckpaste:hover {
+    background-image: url(../images/paste_hover.png);
+}
+
+.ckmobile_setting {
+	width: 300px;
+	height: 80px;
+	margin: 10px;
+        padding: 10px;
+	background: #efefef;
+	float: left;
+        text-align: center;
+        background-position: center 30px;
+        background-repeat: no-repeat;
+}
+
+.ckmobile_setting:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.ckmobile_active {
+	background-color: #ccc;
+}
+
+#mobile_lefttop, #mobile_lefthidden, #mobile_rightbottom, #mobile_righthidden {display: none;}
+
+div[ckclass~=mainbanner] #mobile_default {background-image: url(../images/mobile/banner_default.png);}
+div[ckclass~=mainbanner] #mobile_hide {background-image: url(../images/mobile/banner_hide.png);}
+div[ckclass~=mainbanner] #mobile_alignhalf {display: none;}
+div[ckclass~=mainbanner] #mobile_notaligned {background-image: url(../images/mobile/banner_not_aligned.png);}
+
+div[ckclass~=flexiblemodules] #mobile_default {background-image: url(../images/mobile/modules_default.png);}
+div[ckclass~=flexiblemodules] #mobile_hide {background-image: url(../images/mobile/modules_hide.png);}
+div[ckclass~=flexiblemodules] #mobile_alignhalf {background-image: url(../images/mobile/modules_2x2.png);}
+div[ckclass~=flexiblemodules] #mobile_notaligned {background-image: url(../images/mobile/modules_not_aligned.png);}
+
+div[ckclass~=horiznav] #mobile_default {background-image: url(../images/mobile/menu_default.png);}
+div[ckclass~=horiznav] #mobile_hide {background-image: url(../images/mobile/menu_hide.png);}
+div[ckclass~=horiznav] #mobile_alignhalf {background-image: url(../images/mobile/menu_2x2.png);}
+div[ckclass~=horiznav] #mobile_notaligned {background-image: url(../images/mobile/menu_not_aligned.png);}
+
+div[ckclass~=singlemodule] #mobile_default {background-image: url(../images/mobile/module_default.png);}
+div[ckclass~=singlemodule] #mobile_hide {background-image: url(../images/mobile/module_hide.png);}
+div[ckclass~=singlemodule] #mobile_alignhalf {display: none;}
+div[ckclass~=singlemodule] #mobile_notaligned {display: none;}
+
+div[ckclass~=maincontent] #mobile_lefttop,
+div[ckclass~=maincontent] #mobile_lefthidden,
+div[ckclass~=maincontent] #mobile_rightbottom,
+div[ckclass~=maincontent] #mobile_righthidden {display: block;}
+
+div[ckclass~=maincontent] #mobile_default {background-image: url(../images/mobile/content_default.png);}
+div[ckclass~=maincontent] #mobile_hide {display: none;}
+div[ckclass~=maincontent] #mobile_alignhalf {display: none;}
+div[ckclass~=maincontent] #mobile_notaligned {background-image: url(../images/mobile/content_not_aligned.png);}
+div[ckclass~=maincontent] #mobile_lefttop {background-image: url(../images/mobile/content_lefttop.png);}
+div[ckclass~=maincontent] #mobile_lefthidden {background-image: url(../images/mobile/content_lefthidden.png);}
+div[ckclass~=maincontent] #mobile_rightbottom {background-image: url(../images/mobile/content_rightbottom.png);}
+div[ckclass~=maincontent] #mobile_righthidden {background-image: url(../images/mobile/content_righthidden.png);}

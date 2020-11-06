@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+
+		<field name="id" type="text" default="0" label="COM_TEMPLATECK_FORM_LBL_TEMPLATE_ID"
+		   readonly="true" class="readonly"
+		   description="JGLOBAL_FIELD_ID_DESC" />
+
+		<field name="joomlaversion" type="editor" buttons="true"
+		   class="inputbox"
+		   filter="safehtml"
+
+
+
+
+		   label="COM_TEMPLATECK_FORM_LBL_TEMPLATE_JOOMLAVERSION"
+		   description="COM_TEMPLATECK_FORM_DESC_TEMPLATE_JOOMLAVERSION"  />
+
+		<field name="name" type="editor" buttons="true"
+		   class="inputbox"
+		   filter="safehtml"
+
+
+
+
+		   label="COM_TEMPLATECK_FORM_LBL_TEMPLATE_NAME"
+		   description="COM_TEMPLATECK_FORM_DESC_TEMPLATE_NAME"  />
+
+		<field name="creationdate" type="text" size="40" class="inputbox"
+
+		   label="COM_TEMPLATECK_FORM_LBL_TEMPLATE_CREATIONDATE"
+		   description="COM_TEMPLATECK_FORM_DESC_TEMPLATE_CREATIONDATE"
+
+
+
+		   filter="safehtml" />
+
+		<field name="author" type="text" size="40" class="inputbox"
+
+		   label="COM_TEMPLATECK_FORM_LBL_TEMPLATE_AUTHOR"
+		   description="COM_TEMPLATECK_FORM_DESC_TEMPLATE_AUTHOR"
+
+
+
+		   filter="safehtml" />
+
+		<field name="authoremail" type="text" size="40" class="inputbox"
+
+		   label="COM_TEMPLATECK_FORM_LBL_TEMPLATE_AUTHOREMAIL"
+		   description="COM_TEMPLATECK_FORM_DESC_TEMPLATE_AUTHOREMAIL"
+
+
+
+		   filter="safehtml" />
+
+		<field name="authorurl" type="text" size="40" class="inputbox"
+
+		   label="COM_TEMPLATECK_FORM_LBL_TEMPLATE_AUTHORURL"
+		   description="COM_TEMPLATECK_FORM_DESC_TEMPLATE_AUTHORURL"
+
+
+
+		   filter="safehtml" />
+
+		<field name="copyright" type="text" size="40" class="inputbox"
+
+		   label="COM_TEMPLATECK_FORM_LBL_TEMPLATE_COPYRIGHT"
+		   description="COM_TEMPLATECK_FORM_DESC_TEMPLATE_COPYRIGHT"
+
+
+
+		   filter="safehtml" />
+
+		<field name="license" type="text" size="40" class="inputbox"
+
+		   label="COM_TEMPLATECK_FORM_LBL_TEMPLATE_LICENSE"
+		   description="COM_TEMPLATECK_FORM_DESC_TEMPLATE_LICENSE"
+
+
+
+		   filter="safehtml" />
+
+		<field name="version" type="text" size="40" class="inputbox"
+
+		   label="COM_TEMPLATECK_FORM_LBL_TEMPLATE_VERSION"
+		   description="COM_TEMPLATECK_FORM_DESC_TEMPLATE_VERSION"
+
+
+
+		   filter="safehtml" />
+
+		<field name="description" type="text" size="40" class="inputbox"
+
+		   label="COM_TEMPLATECK_FORM_LBL_TEMPLATE_DESCRIPTION"
+		   description="COM_TEMPLATECK_FORM_DESC_TEMPLATE_DESCRIPTION"
+
+
+
+		   filter="safehtml" />
+
+		<field name="htmlcode" type="editor" buttons="true"
+		   class="inputbox"
+		   filter="safehtml"
+
+
+
+
+		   label="COM_TEMPLATECK_FORM_LBL_TEMPLATE_HTMLCODE"
+		   description="COM_TEMPLATECK_FORM_DESC_TEMPLATE_HTMLCODE"  />
+
+		<field name="theme" type="editor" buttons="true"
+		   class="inputbox"
+		   filter="safehtml"
+
+
+
+
+		   label="COM_TEMPLATECK_FORM_LBL_TEMPLATE_THEME"
+		   description="COM_TEMPLATECK_FORM_DESC_TEMPLATE_THEME"  />
+
+		<field name="cssparams" type="editor" buttons="true"
+		   class="inputbox"
+		   filter="safehtml"
+
+
+
+
+		   label="COM_TEMPLATECK_FORM_LBL_TEMPLATE_CSSPARAMS"
+		   description="COM_TEMPLATECK_FORM_DESC_TEMPLATE_CSSPARAMS"  />
+
+		<field name="options" type="editor" buttons="true"
+		   class="inputbox"
+		   filter="safehtml"
+
+
+
+
+		   label="COM_TEMPLATECK_FORM_LBL_TEMPLATE_OPTIONS"
+		   description="COM_TEMPLATECK_FORM_DESC_TEMPLATE_OPTIONS"  />
+
+		<field name="htmlcode_responsive" type="editor" buttons="true"
+		   class="inputbox"
+		   filter="safehtml"
+
+
+
+
+		   label="COM_TEMPLATECK_FORM_LBL_TEMPLATE_HTMLCODE_RESPONSIVE"
+		   description="COM_TEMPLATECK_FORM_DESC_TEMPLATE_HTMLCODE_RESPONSIVE"  />
+
+		<field
+			name="state"
+			type="list"
+			label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC"
+			class="inputbox"
+			size="1"
+			default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+
+		<field name="checked_out" type="hidden" filter="unset" />
+		<field name="checked_out_time" type="hidden" filter="unset" />
+
+	</fieldset>
+
+</form>

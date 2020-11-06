@@ -1,0 +1,31 @@
+.beautifulck.cornerleft_en {
+	position: relative;
+	z-index: 100;
+}
+
+.beautifulck.cornerleft_en .beautifulckbg {
+	position: absolute;
+	z-index: 101;
+	height: 99px;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.beautifulck.cornerleft_en.pink .beautifulckbg {background-image: url(images/cornerleft_en_pink.png);}
+.beautifulck.cornerleft_en.red .beautifulckbg {background-image: url(images/cornerleft_en_red.png);}
+.beautifulck.cornerleft_en.orange .beautifulckbg {background-image: url(images/cornerleft_en_orange.png);}
+.beautifulck.cornerleft_en.yellow .beautifulckbg {background-image: url(images/cornerleft_en_yellow.png);}
+.beautifulck.cornerleft_en.green .beautifulckbg {background-image: url(images/cornerleft_en_green.png);}
+.beautifulck.cornerleft_en.blue .beautifulckbg {background-image: url(images/cornerleft_en_blue.png);}
+.beautifulck.cornerleft_en.grey .beautifulckbg {background-image: url(images/cornerleft_en_grey.png);}
+
+.beautifulck.cornerleft_en h3 {
+	position: absolute;
+	z-index: 103;
+	border: none !important;
+}
+
+.beautifulck.cornerleft_en .beautifulck_content {
+    position: relative;
+    z-index: 110;
+}

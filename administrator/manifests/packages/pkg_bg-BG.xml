@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="package" version="2.5">
+    <name>Български език (България)</name>
+    <packagename>bg-BG</packagename>
+    <version>2.5.7.1</version>
+    <creationDate>07 July 2012</creationDate>
+    <author>Joomla! Bulgaria</author>
+    <authorEmail>joomla@yboev.eu</authorEmail>
+    <authorUrl></authorUrl>
+    <url></url>
+    <packager></packager>
+    <packagerurl></packagerurl>
+    <description>Превод на Джумла! на български - цялостен пакет.</description>
+    <files>
+        <file type="language" client="site" id="bg-BG">site_bg-BG.zip</file>
+        <file type="language" client="administrator" id="bg-BG">admin_bg-BG.zip</file>
+    </files>
+    <updateservers>
+        <server type="collection" priority="1" name="Accredited Joomla! Translations">http://update.joomla.org/language/translationlist.xml</server>
+    </updateservers>
+</extension>

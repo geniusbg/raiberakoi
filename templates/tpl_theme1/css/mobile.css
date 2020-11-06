@@ -1,0 +1,229 @@
+
+/* ---------------------------------------
+	Responsive design code
+-----------------------------------------*/
+
+@media screen and (max-width: 1024px) {
+
+img {
+	max-width: 100% !important;
+        height: auto !important;
+}
+
+.container {
+	width: 950px !important;
+}
+
+.hidemobile4 {
+	display: none !important;
+}
+
+
+
+}
+
+@media screen and (max-width: 950px) {
+
+.container {
+	width: 758px !important;
+}
+
+.hidemobile3 {
+	display: none !important;
+}
+
+
+
+}
+
+@media screen and (max-width: 758px) {
+
+.container {
+	width: 524px !important;
+}
+
+.hidemobile2 {
+	display: none !important;
+}
+
+#banner {
+	height: auto !important;
+}
+#banner .logobloc {
+	float :none !important;
+	width: auto !important;
+}
+#nav {
+	height: auto !important;
+}
+#nav ul {
+	height: auto !important;
+}
+#nav li {
+	float :none !important;
+	width: 100% !important;
+}
+#nav div.floatck {
+	width: 100% !important;
+}
+#slideshow {
+	height: auto !important;
+}
+#slideshow .logobloc {
+	float :none !important;
+	width: auto !important;
+}
+#modulestop .flexiblemodule {
+	width: 100% !important;
+float: none;
+}
+#modulestop .flexiblemodule > div.inner {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+#maincontent .column {
+	width: 100% !important;
+	clear:both;
+	float:left
+}
+#maincontent .column1 div.inner, #maincontent .column2 div.inner {
+	/*overflow:hidden;*/
+}
+#maincontent .column div.inner {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+.items-row .item, .column {
+	width: auto !important;
+	float: none;
+	margin: 0 !important;
+}
+
+.column div.moduletable, .column div.moduletable_menu {
+	float: none;
+	width: auto !important;
+	/*margin: 0 !important;
+	padding: 0 !important;*/
+}
+
+/** specifique au formulaire de contact **/
+.contact form fieldset dt {
+	max-width: 80px;
+}
+
+.contact input, .contact textarea {
+	max-width: 160px;
+}#modulesbottom .flexiblemodule {
+	width: 100% !important;
+float: none;
+}
+#modulesbottom .flexiblemodule > div.inner {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+#footer {
+	height: auto !important;
+}
+#footer .logobloc {
+	float :none !important;
+	width: auto !important;
+}
+
+
+}
+
+@media screen and (max-width: 524px) {
+
+.container {
+	width: 292px !important;
+}
+
+.hidemobile1 {
+	display: none !important;
+}
+
+#banner {
+	height: auto !important;
+}
+#banner .logobloc {
+	float :none !important;
+	width: auto !important;
+}
+#nav {
+	height: auto !important;
+}
+#nav ul {
+	height: auto !important;
+}
+#nav li {
+	float :none !important;
+	width: 100% !important;
+}
+#nav div.floatck {
+	width: 100% !important;
+}
+#slideshow {
+	height: auto !important;
+}
+#slideshow .logobloc {
+	float :none !important;
+	width: auto !important;
+}
+#modulestop .flexiblemodule {
+	width: 100% !important;
+float: none;
+}
+#modulestop .flexiblemodule > div.inner {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+#maincontent .column {
+	width: 100% !important;
+	clear:both;
+	float:left
+}
+#maincontent .column1 div.inner, #maincontent .column2 div.inner {
+	/*overflow:hidden;*/
+}
+#maincontent .column div.inner {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+.items-row .item, .column {
+	width: auto !important;
+	float: none;
+	margin: 0 !important;
+}
+
+.column div.moduletable, .column div.moduletable_menu {
+	float: none;
+	width: auto !important;
+	/*margin: 0 !important;
+	padding: 0 !important;*/
+}
+
+/** specifique au formulaire de contact **/
+.contact form fieldset dt {
+	max-width: 80px;
+}
+
+.contact input, .contact textarea {
+	max-width: 160px;
+}#modulesbottom .flexiblemodule {
+	width: 100% !important;
+float: none;
+}
+#modulesbottom .flexiblemodule > div.inner {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+#footer {
+	height: auto !important;
+}
+#footer .logobloc {
+	float :none !important;
+	width: auto !important;
+}
+
+
+}

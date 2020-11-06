@@ -1,0 +1,825 @@
+/**
+ * @copyright	Copyright (C) 2011 Cédric KEIFLIN alias ced1870
+ * http://www.template-creator.com
+ * Component Template Creator CK
+ * @license		GNU/GPL
+ * */
+
+.clr {
+    clear: both;
+}
+
+/* style pour étiquettes devant champs id, class, position... */
+label.labelblock {
+    min-width: 0px !important;
+    float: left !important;
+    display: inline !important;
+    clear: none !important;
+    font-size: 10px;
+    margin-top: 8px;
+}
+
+/* style global des champs */
+.ckinput {
+    float: left !important;
+    padding:2px !important;
+    width: 200px !important;
+    height: 19px;
+    font-size : 12px !important;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    display: inline;
+    float: none;
+    margin: 2px !important;
+    border-top: 1px solid #999;
+    border-left: 1px solid #999;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+textarea.ckinput {
+    height: 40px;
+}
+
+select.ckinput {
+    height: 24px;
+}
+
+
+/*---------------------------------
+	Styles des poignées de controle
+-----------------------------------*/
+.ckfields {
+    background: #aaa;
+/*    position: absolute;*/
+    color: #000;
+    font-weight: normal;
+    font-decoration: none;
+    font-style: normal;
+    text-transform: none;
+}
+
+.ckfield {
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    width: 55px;
+    height: 16px;
+    margin-top: 3px;
+    color: #000;
+}
+
+.controlCss {
+    line-height: 25px;
+    letter-spacing: -1px;
+    margin-right: 5px;
+}
+
+.isControl {
+    display: block;
+    float: left;
+    width: 25px;
+    height: 25px;
+    background-position: 4px 4px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: 1px solid #fff;
+    background-color: #f4f4f4;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+}
+
+.isControl:hover {
+    background-color: #ddd;
+}
+
+.controlDel {
+    background-image: url(../images/delete.png);
+}
+
+.controlUp {
+    background-image: url(../images/arrowup.png);
+}
+
+.controlUp.horiz {
+    background-image: url(../images/arrowleft.png);
+}
+
+.controlDown {
+    background-image: url(../images/arrowdown.png);
+}
+
+.controlDown.horiz {
+    background-image: url(../images/arrowright.png);
+}
+
+#bodycss, #wrappercss {
+    margin-top: -33px;
+    width: 250px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+
+#wrappercss {
+    margin-left: 220px;
+}
+
+
+/*---------------------
+	Styles de popup
+-----------------------*/
+
+.ckpopup {
+    position: fixed;
+    z-index: 101;
+    display: none;
+    left: 50%;
+    margin-left: -400px;
+    top: 50%;
+    margin-top: -250px;
+    height: 400px;
+    width: 810px;
+    padding: 0px;
+    background: #f4f4f4 url(../images/fondpopup.png) left top repeat-x;
+    -moz-box-shadow: 0 0 15px #888;
+    -webkit-box-shadow: 0 0 15px#888;
+    box-shadow: 0 0 15px #888;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+}
+
+.ckpopuptitle {
+    font-size: 18px;
+    color: #777777;
+    width: 400px;
+    margin: 10px 0 0 15px;
+    float: left;
+}
+
+.ckpopuplogo {
+    background: url(../images/logo_templateck_48.png) left top no-repeat;
+    width: 215px;
+    height: 48px;
+    margin: 10px 40px 0 0;
+    top: 0px;
+    float: right;
+}
+
+
+.ckclose {
+    display: block;
+    float: right;
+    width: 60px;
+    height: 45px;
+    color: #c1c1c1;
+    padding-top: 25px;
+    text-align: center;
+    margin: 10px 10px 0 0;
+    background-position: 20px 0px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-image: url(../images/cancel.png);
+}
+
+.ckclose:hover {
+    color: #fff;
+    background-image: url(../images/cancel_hover.png);
+}
+
+.ckclose.cksave {
+    background-image: url(../images/validate.png);
+}
+
+.ckclose.cksave:hover {
+    background-image: url(../images/validate_hover.png);
+}
+
+.ckclose.ckcopy {
+    background-image: url(../images/copy.png);
+}
+
+.ckclose.ckcopy:hover {
+    background-image: url(../images/copy_hover.png);
+}
+
+.ckclose.ckpaste {
+    background-image: url(../images/paste.png);
+}
+
+.ckclose.ckpaste:hover {
+    background-image: url(../images/paste_hover.png);
+}
+
+
+
+.infos_code_field, #joomla_code_inner, #modules_code_inner {
+    margin: 83px 5px 5px 5px;
+    padding: 0 10px;
+    height: 310px;
+    background: #fff;
+}
+
+#elementsmenu {
+    margin: 0px 5px 5px 5px;
+    padding: 0px;
+    height: 310px;
+    background: #fff;
+    top: 83px;
+    position: absolute;
+    width: 800px;
+}
+
+#elementsmenu2 {
+    top: 22px;
+    position: absolute;
+    width: 420px;
+    left:5px;
+    background: #3c3c3c;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    color: #fff;
+    padding:0;
+}
+
+#elementsmenu3 {
+    top: 22px;
+    position: absolute;
+    left:5px;
+    background: #3c3c3c;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    color: #fff;
+}
+
+/* zone avec explications et illustration */
+#ckpopupdescription {
+    float: left;
+    margin: -20px 0 0 10px;
+    padding: 0;
+    width: 750px;
+}
+
+#ckpopupdescriptiontitle {
+    font-size: 20px;
+    color:#ff9900;
+    padding: 0;
+}
+
+#ckpopupillustration {
+    margin: -30px 0 0 5px;
+    padding: 0;
+    float: right;
+    text-align: right;
+    position: relative;
+    left: 30px;
+}
+
+
+/*------------------------------
+	Styles des champs dans popup
+------------------------------------*/
+
+/* zone qui contient le menu à onglets et les champs */
+.menustyles {
+    position: absolute;
+    color: #666;
+    top: 90px;
+}
+
+/* zone avec les champs */
+.menucontent {
+    position: relative;
+    height: 170px;
+    padding: 5px;
+    margin: 5px 0 0 0;
+    width: 790px;
+    background: url(../images/fondchamps.png) left top repeat-x;
+    color: #a1a1a1;
+    font-size: 13px;
+    font-family: Arial;
+    font-weight: normal;
+    line-height: 23px;
+}
+
+/* style des champs */
+.menustyles .inputbox, .menustyles .inputboxfake, #elementsmenu .inputbox {
+    padding:2px;
+    width: 35px;
+    font-size : 12px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    display: inline;
+    float: none !important;
+    margin: 2px;
+    border-top: 1px solid #999;
+    border-left: 1px solid #999;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.menustyles input[type="radio"], input[type="checkbox"] {
+    border: none;
+}
+
+.menustyles img, #elementsmenu img {
+    float: none !important;
+    margin : 0 !important;
+}
+
+/* colonne de champs */
+.menupaneblock {
+    float: left;
+    padding: 0;
+}
+
+/* titre de colonne */
+.menupanetitle {
+    padding: 15px 5px 5px 5px;
+    text-align: center;
+}
+
+/* zone avec les onglets - barre de menu */
+.menubuttons {
+    text-align: left;
+}
+
+.menubutton {
+    display: inline;
+    padding: 5px;
+    margin: 0 5px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #a1a1a1;
+}
+
+.menubutton.activebutton, .menubutton:hover {
+    color : #000;
+}
+
+.menuseparator {
+    float: left;
+}
+
+#elementscontent .pane {
+    position: absolute;
+
+}
+
+#elementsmenu .menulink {
+    position: relative;
+    display: inline;
+    cursor: pointer;
+    color: #c1c1c1;
+    top: -50px;
+    text-align: center;
+    font-size: 13px;
+    margin: 0 5px;
+}
+
+#elementsmenu .menulink:hover {
+    color:#ff9900;
+}
+
+#elementsmenu .menulink.activebutton {
+    color: #ff9900;
+}
+
+#elementscontent2 .pane2, #elementscontent3 .pane3 {
+    position: absolute;
+}
+
+#elementscontent2 .menucontent2, #elementscontent3 .menucontent3 {
+    width: 750px;
+}
+
+#elementsmenu2 .menulink2, #elementsmenu3 .menulink3 {
+    position: relative;
+    display: inline;
+    cursor: pointer;
+    color: #c1c1c1;
+    top: 0px;
+    text-align: center;
+    font-size: 13px;
+    margin: 0 2px;
+    white-space: nowrap;
+    line-height: 18px;
+}
+
+#elementsmenu2 .menulink2:hover, #elementsmenu3 .menulink3:hover {
+    color:#FF9900;
+}
+
+#elementsmenu2 .menulink2.activebutton, #elementsmenu3 .menulink3.activebutton {
+    color: #FF9900;
+}
+
+
+
+/*-----------------------------
+    Zone de contenu
+-----------------------------*/
+#adminForm {
+    position: relative;
+}
+
+
+#code_areas {
+    background: #eee;
+    margin-right: 0px;
+    border: 1px solid #fff;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+}
+
+#joomla_code_inner, #modules_code_inner  {
+    overflow: auto;
+}
+
+.flexiblemodule {
+    width: 24%;
+    float: left;
+/*    margin-top: 30px;*/
+}
+
+.column {
+    width: 25%;
+    float: left;
+/*    margin-top: 30px;*/
+}
+
+.column.content  {
+    width: 49%;
+    padding: 0;
+    margin: 0;
+}
+
+.column.maincenter  {
+    width: 74%;
+}
+
+.maincenter .column  {
+    width: 32%;
+    float:left;
+    margin-top: 0;
+}
+
+.maincenter .center  {
+    width: 66%;
+    float:left;
+    text-align: left;
+}
+
+.maintop, .centertop, .centercont {
+/*    margin-top: 30px;*/
+}
+
+.banner, .bannerlogo {
+    float: left;
+/*    margin-top: 30px;*/
+    width: 400px;
+}
+
+.bannerlogo {
+    width: 286px;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.ckbloc {
+    border: 1px solid transparent;
+}
+
+.ckbloc:hover {
+    border: 1px dotted red;
+    border-color: red !important;
+    border-radius: none !important;
+    -moz-border-radius: none !important;
+}
+
+
+
+
+/*----------------------------------------------------------------------------- fin new code------------------*/
+
+#template_container {
+    width: 100%;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+#template_container fieldset {
+    border: none;
+}
+
+#html_code {
+    width: 100%;
+}
+
+#htmlconteneur {
+    border : 1px solid #eee;
+    margin: 0 5px;
+}
+
+#conteneur, #cssconteneur {
+    width : 100%;
+    min-height : 500px;
+    float : left;
+}
+
+.thisisatooltip {
+    padding-left: 30px;
+    min-height: 30px;
+    background: url(../images/lightbulb.png) 2px 0px no-repeat;
+}
+
+/*** Manage dialog texts ***/
+.errorck {
+    color: red;
+}
+
+.successck {
+    color: green;
+}
+
+p.errorck {
+    margin: 0;
+    padding: 0;
+}
+
+p.successck {
+    margin: 0;
+    padding: 0;
+}
+
+/*** download button ***/
+.ckdownload, #cssapply {
+    padding: 10px 15px 10px 40px;
+    margin: 20px;
+    background: #ddd;
+    border: 1px solid #fff;
+    cursor: pointer;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+    background-color: #f4f4f4;
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    background-image: url(../images/download.png);
+}
+
+.ckpreview {
+    padding: 10px 15px 10px 40px;
+    margin: 20px;
+    background: #ddd;
+    border: 1px solid #fff;
+    cursor: pointer;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+    background-color: #f4f4f4;
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    background-image: url(../images/magnifyingglass.png);
+}
+
+.buttondesc {
+    font-size: 10px;
+    color: #000;
+    line-height: 12px;
+    height: 12px;
+    margin-top: -10px;
+}
+
+/* -- TOOLTIP STYLES ----------------------------- */
+body .tip {
+    float: left;
+    background: #fff;
+    color: #1a1a1a;
+    border: none;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+    padding: 5px;
+    max-width: 400px;
+    position: relative;
+    z-index: 50;
+    opacity : 0.9;
+    -moz-opacity : 0.9;
+    -ms-filter: "alpha(opacity=90)"; /* IE 8 */
+    filter : alpha(opacity=90); /* IE < 8 */
+}
+
+body .tip-title {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: -15px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    background: none;
+}
+
+body .tip-text {
+    font-size: 1em;
+    margin: 0;
+    color: #efefef;
+}
+
+/********************************
+*    =  mooRainbow              *
+*       color picker            *
+********************************/
+
+/***
+ *  - mooRainbow: defaultCSS
+ * author: w00fz <w00fzIT@gmail.com>
+*/
+
+.colorPicker {
+    padding: 5px;
+    cursor: pointer;
+}
+
+#mooRainbow { font-size: 11px; color: #000; }
+
+.moor-box {
+    width: 230px;
+    height: 270px;
+    border: 1px solid #636163;
+    background-color: #f9f9f9;
+    z-index: 11000;
+}
+.moor-overlayBox {
+    width: 150px; /* Width and Height of the overlay must be setted here: default 256x256 */
+    height: 150px;
+    margin-top: 9px;
+    margin-left: 9px;
+    border: 1px solid #000;
+}
+.moor-slider {
+    border: 1px solid #000;
+    margin-top: 9px;
+    margin-left: 170px;
+    width: 19px; /* if you want a bigger or smaller slider... */
+    height: 150px;
+}
+.moor-colorBox {
+    border: 1px solid #000;
+    width: 24px;
+    height: 38px;
+    margin-top: 8px;
+    margin-left: 199px;
+}
+.moor-currentColor { /* Bottom Box Color, the backup one */
+                     margin-top: 9px;
+                     margin-left: 200px;
+                     width: 24px;
+                     height: 19px;
+}
+.moor-okButton {
+    font-family: Tahoma;
+    font-weight: bold;
+    font-size: 11px;
+    margin-top: 235px;
+    margin-left: 8px;
+    background: #e6e6e6;
+    height: 23px;
+    border: 1px solid #d6d6d6;
+    border-left-color: #f5f5f5;
+    border-top-color: #f5f5f5;
+}
+
+.moor-cleaner,.moor-copy,.moor-paste {
+    font-family: Tahoma;
+    font-weight: bold;
+    font-size: 11px;
+    margin-top: 235px;
+    margin-left: 65px;
+    background: #e6e6e6;
+    height: 23px;
+    border: 1px solid #d6d6d6;
+    border-left-color: #f5f5f5;
+    border-top-color: #f5f5f5;
+}
+
+.moor-copy{
+    margin-top: 235px;
+    margin-left: 120px;
+}
+
+.moor-paste{
+    margin-top: 235px;
+    margin-left: 170px;
+}
+
+#mooRainbow label {
+    font-family: mono;
+}
+/* Following are just <label> */
+.moor-rLabel {
+    margin-top: 170px;
+    margin-left: 10px;
+}
+.moor-gLabel {
+    margin-top: 170px;
+    margin-left: 70px;
+}
+.moor-bLabel {
+    margin-top: 170px;
+    margin-left: 130px;
+}
+.moor-HueLabel {
+    margin-top: 190px;
+    margin-left: 10px;
+}
+span.moor-ballino { /* Style hue ° (degree) !! */
+                    margin-top: 190px;
+                    margin-left: 70px;
+}
+.moor-SatuLabel {
+    margin-top: 190px;
+    margin-left: 130px;
+}
+.moor-BrighLabel {
+    margin-top: 210px;
+    margin-left: 10px;
+}
+.moor-hexLabel {
+    margin-top: 210px;
+    margin-left: 100px;
+}
+
+/* <input> */
+.moor-rInput, .moor-gInput, .moor-bInput, .moor-HueInput, .moor-SatuInput, .moor-BrighInput {
+    width: 30px;
+}
+.moor-hexInput {
+    width: 55px;
+}
+.moor-cursor {
+    background-image: url(../images/moorainbow/moor_cursor.gif);
+    width: 12px;
+    height: 12px;
+}
+.moor-arrows {
+    background-image: url(../images/moorainbow/moor_arrows.gif);
+    top: 9px;
+    left: 161px;
+    width: 41px;
+    height: 9px;
+}
+.moor-chooseColor { /* Top Box Color, the choosen one */
+                    margin-top: 28px;
+                    margin-left: 200px;
+                    width: 24px;
+                    height: 19px;
+}
+
+
+/* -----------------------------------------
+		Pagination
+-------------------------------------------*/
+ul.pagenav {
+    list-style-type:none;
+    padding:0;
+    overflow:hidden
+}
+
+ul.pagenav li {
+    display:inline-block;
+    padding:0px;
+    margin:0;
+    line-height:2em
+}
+
+ul.pagenav li a {
+    display:inline;
+    padding:2px;
+    text-decoration:none
+}
+
+ul.pagenav li.pagenav-prev {
+    float:left
+}
+
+ul.pagenav li.pagenav-next {
+    float:right
+}
+
+

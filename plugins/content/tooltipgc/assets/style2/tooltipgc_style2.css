@@ -1,0 +1,22 @@
+/**
+ * @copyright	Copyright (C) 2010 Cédric KEIFLIN alias ced1870 & Ghazal
+ * http://www.ck-web-creation-alsace.com
+ * http://www.joomlack.fr
+ * @license		GNU/GPL
+**/
+
+cite.infotip.style2 {
+color: black;
+background : pink;
+}
+
+cite.infotip.style2 span.tooltipgc_tooltip {
+border:3px solid #FF0080;
+background:#FFD5EA;
+color: #FF0080;
+font-weight : bold;
+}
+
+cite.infotip.style2 span.tooltipgc_inner {
+padding : 5px;
+}

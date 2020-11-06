@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="2.5" method="upgrade">
+	<name>Template Creator Package</name>
+	<author>Cédric KEIFLIN</author>
+	<creationDate>Juillet 2012</creationDate>
+ 	<packagename>templatecreatorck</packagename>
+	 <version>2.1.11</version>
+	 <url>http://www.template-creator.com</url>
+	 <description>Template Creator CK Installer Package : The component Template Creator CK and the preview template have been installed successfully.</description>
+	 <files folder="packages">
+		 <file type="component" id="com_templateck" >com_templateck_2.1.11.zip</file>
+		 <file type="template" id="templatecreatorck" client="site">tpl_templatecreatorck_1.0.zip</file>
+	 </files>
+</extension>

@@ -1,0 +1,1562 @@
+/**
+ * @name		Template Creator CK 3
+ * @package		com_templateck
+ * @copyright		Copyright (C) 2013. All rights reserved.
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ * @author		Cedric Keiflin - http://www.template-creator.com - http://www.joomlack.fr
+ */
+
+.clr {
+    clear: both;
+}
+
+.invalid {
+    border: 2px solid red !important;
+}
+
+tr, td {
+    border: none !important;
+}
+
+/*-------- RESPONSIVE --------*/
+@media screen and (max-width: 758px) {
+
+	.container {
+		max-width: 100%;
+	}
+
+	.column, .flexiblemodule {
+		float: none !important;
+		width: 100% !important;
+	}
+
+	.column > div.inner, .flexiblemodule > div.inner {
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+	}
+
+	.horiznav ul.menu li {
+		float :none !important;
+		width: 100% !important;
+	}
+
+}
+
+/*-------- TOOLBAR MENU --------*/
+.flexiblemodule > .editorck, .bannerlogo > .editorck, .banner > .editorck {
+    margin-top: 32px;
+}
+
+.maintop > .editorck, .maincenter > .editorck, .center > .editorck, .mainbottom > .editorck, .column2 > .editorck {
+    margin-top: 0;
+}
+
+.editor .main > div.inner, .editor .maincontent > div.inner, .editor .maincenter > div.inner, .editor .center > div.inner {
+    padding-top: 32px !important;
+}
+
+.maincontrol {
+    height: 20px;
+    line-height: 20px;
+    margin: 5px;
+    padding: 3px 3px 3px 50px !important;
+    border: 1px solid #777;
+    color: #000;
+    font-size: 16px;
+    text-align : left;
+    text-decoration: none;
+    background: #eee url(../images/add.png) 20px center no-repeat;
+    cursor: pointer;
+}
+
+.maincontrol:hover {
+    background-color: #ccc;
+}
+
+
+/*-------- BLOCKS EDITON --------*/
+.editorcktitle {
+    display: block;
+    background: #000 !important;
+    margin: 2px 2% 0 2%;
+    position: relative;
+    z-index: 1000;
+    padding: 0;
+    line-height: 25px;
+    height: 28px;
+    font-size: 13px !important;
+    color: #fff !important;
+    text-align: center !important;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    border: none;
+}
+
+.ckfields .isControl {
+    width: 27px;
+    height: 30px;
+    float: left;
+    cursor: pointer;
+}
+
+.ckfields .isControl.controlDown, .ckfields .isControl.controlUp, .ckfields .isControl.controlModules, .ckfields .isControl.controlMaincontent, .ckfields .isControl.controlDel {
+	width: 20px;
+}
+
+.ckfields .isControl:hover {
+    background-color: #666;
+    -moz-border-radius: 0px;
+    -o-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+/* for main blocks */
+.ckfields {
+    min-height: 30px;
+    font-family: serif !important;
+    margin: 0;
+    padding: 0;
+    left: 0px;
+    top: 0px;
+    background: #9e9e9e;
+    z-index: 101;
+    position: absolute;
+}
+
+.ckfields .editorcktitle {
+    float: left;
+    min-width: 100px;
+    margin: 1px;
+    padding: 0;
+    line-height: 25px;
+    height: 28px;
+    font-size: 13px !important;
+    color: #fff !important;
+    text-align: center !important;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    border: none;
+    background: #000 !important;
+}
+
+.ckfields .editorckposition {
+    float: left;
+    min-width: 100px;
+    margin: 1px;
+    padding: 0;
+    line-height: 25px;
+    height: 28px;
+    font-size: 13px !important;
+    color: #000 !important;
+    text-align: center !important;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    border: none;
+    background: #fff !important;
+}
+
+.editorcktitle:hover, .editorckposition:hover {
+    cursor: pointer;
+    background: #666 url(../images/toolbar/edition.png) center center no-repeat !important;
+    color: #fff !important;
+    text-indent: -999em;
+}
+
+#wrapper > .editorck .editorcktitle:hover {
+    cursor: inherit;
+    background: #000 !important;
+    color: #fff !important;
+    text-indent: 0;
+}
+
+.ckfields .controlDel{
+    background: url(../images/toolbar/delete.png) center center no-repeat;
+    border-radius: 5px 0 0 0;
+}
+
+.ckfields .controlUp {
+    background: url(../images/toolbar/arrow_up.png) center center no-repeat;
+}
+
+.ckfields .controlDown {
+    background: url(../images/toolbar/arrow_down.png) center center no-repeat;
+}
+
+.ckfields .controladdBlock {
+    background: url(../images/toolbar/addblock.png) center center no-repeat;
+}
+
+.ckfields .controladdWrapper {
+    background: url(../images/toolbar/addwrapper.png) center center no-repeat;
+}
+
+.column1 .controlUp, .column2 .controlUp, .maincenter .controlUp, .flexiblemodule .controlUp,
+.main .controlUp, .bannerlogo .controlUp, .banner .controlUp {
+    background: url(../images/toolbar/arrow_left.png) center center no-repeat;
+}
+
+.column1 .controlDown, .column2 .controlDown, .maincenter .controlDown, .flexiblemodule .controlDown,
+.main .controlDown, .bannerlogo .controlDown, .banner .controlDown {
+    background: url(../images/toolbar/arrow_right.png) center center no-repeat;
+}
+
+.ckfields .controlCss {
+    background: url(../images/toolbar/styles.png) center center no-repeat;
+}
+
+.ckfields .controlMaincontent, .ckfields .controlModules {
+    background: url(../images/toolbar/options.png) center center no-repeat;
+}
+
+
+/** for content **/
+.maintop .controlDown, .mainbottom .controlDown, .centertop .controlDown, .centerbottom .controlDown, .center .controlDown, .maincenter .controlDown,
+.maintop .controlUp, .mainbottom .controlUp, .centertop .controlUp, .centerbottom .controlUp, .center .controlUp, .maincenter .controlUp,
+.maintop .controlDel, .mainbottom .controlDel, .centertop .controlDel, .centerbottom .controlDel, .center .controlDel, .maincenter .controlDel,
+.maincontent .controlDel, #wrapper > .ckfields .controlDel, .flexiblemodule .controlDel, .bannerlogo .controlDel, #wrapper > .editorck .controlDel {
+    display: none;
+}
+
+.column2 .controlDown, .column2 .controlUp {
+    display: block;
+}
+
+.editor .maincenter {
+    margin-bottom: 10px !important;
+}
+
+.editor .wrapper {
+    padding-top: 40px !important;
+}
+
+.editor .wrapper > .editorck {
+    height: 40px !important;
+    min-height: 40px !important;
+    max-height: 40px !important;
+}
+
+/*-------- BLOCS -----------------*/
+#body {
+    margin: 0;
+}
+
+#body.noeditor .editorck, #body.noeditor .maincontrol {
+    display: none !important;
+    left: -999em;
+    visibility: hidden;
+}
+
+.flexiblemodule {
+    float: left;
+    width: 20%;
+}
+
+.ckbloc[isdisabled=true] {
+    display: none;
+}
+
+.editor .ckbloc[ishidden=true] > div.inner {
+    padding: 0px !important;
+    margin: 0px !important;
+    border: none !important;
+    background: none !important;
+    box-shadow: none !important;
+}
+
+.editor .ckbloc[ishidden=true] > .editorck {
+    display: none !important;
+}
+
+.ckbloc > div.inner {
+    border: 1px solid transparent;
+}
+
+.ckbloc:hover > div.inner {
+    border: 1px solid #3399ff;
+}
+
+.noeditor .ckbloc:hover > div.inner {
+    border: 1px solid transparent;
+}
+
+.column {
+    float: left;
+}
+
+.column1 {
+    width: 25%;
+}
+
+.main {
+    width: 75%;
+}
+
+.column2 {
+    width: 25%;
+}
+
+.center {
+    width: 75%;
+}
+
+.norightcol .center {
+    width: 100%;
+}
+
+.noleftcol .main {
+    width: 100%;
+}
+
+.banner {
+    float: left;
+}
+
+.bannerlogo {
+    float: left;
+}
+
+/*-------- POPUP --------*/
+
+.ckpopup {
+    position: absolute;
+    z-index: 1001;
+    display: none;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: none;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+.ckpopupheader {
+    background: #3d3d3d url(../images/fondpopup.png) left bottom repeat-x;
+    min-height: 82px;
+    padding: 0 0 1px 0;
+}
+
+#mainmenuck > .ckpopupheader {
+    background: #3d3d3d url(../images/fondpopup_main.png) left bottom repeat-x;
+}
+
+.ckpopuptitle {
+    font-size: 18px;
+    color: #777777;
+    margin: 20px 0 0 15px;
+    float: left;
+}
+
+.ckpopupsubtitle {
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.ckpopuplogo {
+    background: url(../images/logo_templateck.png) left top no-repeat;
+    width: 220px;
+    height: 48px;
+    margin: 10px 5px 0 10px;
+    top: 0px;
+    float: left;
+}
+
+.ckpopupoverlay {
+    position: fixed;
+    background: #fff;
+    z-index: -1;
+    width:100%;
+    height: 100%;
+}
+
+
+.ckclose {
+    display: block;
+    float: right;
+    width: 60px;
+    height: 45px;
+    color: #c1c1c1;
+    padding-top: 25px;
+    text-align: center;
+    margin: 10px 10px 0 0;
+    background-position: 20px 0px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-image: url(../images/cancel.png);
+}
+
+.ckclose:hover {
+    color: #fff;
+    background-image: url(../images/cancel_hover.png);
+}
+
+.ckclose.cksave {
+    background-image: url(../images/validate.png);
+}
+
+.ckclose.cksave:hover {
+    background-image: url(../images/validate_hover.png);
+}
+
+.ckclose.ckcopy {
+    background-image: url(../images/copy.png);
+}
+
+.ckclose.ckcopy:hover {
+    background-image: url(../images/copy_hover.png);
+}
+
+.ckclose.ckpaste {
+    background-image: url(../images/paste.png);
+}
+
+.ckclose.ckpaste:hover {
+    background-image: url(../images/paste_hover.png);
+}
+
+#ckwaitoverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(../images/wait.gif) center center no-repeat;
+}
+
+#elementscontainer {
+    margin: 0 0 0 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.menustylesbuttonsdescription {
+    width: 235px;
+    height: 205px;
+    background: url(../images/params_buttons.png) left top no-repeat;
+    float: left;
+}
+
+.menustylestitresdescription {
+    width: 235px;
+    height: 205px;
+    background: url(../images/params_titres.png) left top no-repeat;
+    float: left;
+}
+
+.menustylespagedescription {
+    width: 185px;
+    height: 205px;
+    background: url(../images/params_page.png) left top no-repeat;
+    float: left;
+}
+
+.menustyleswrapperdescription {
+    width: 235px;
+    height: 224px;
+    background: url(../images/params_body_wrapper.png) left top no-repeat;
+    float: left;
+}
+
+.menustylesblocdescription {
+    width: 250px;
+    height: 500px;
+    background: url(../images/block.png) left top no-repeat;
+    float: left;
+}
+
+.menustylesmoduledescription {
+    width: 250px;
+    height: 500px;
+    background: url(../images/module.png) left top no-repeat;
+    float: left;
+}
+
+.menustylesmoduletitledescription {
+    width: 250px;
+    height: 500px;
+    background: url(../images/module_title.png) left top no-repeat;
+    float: left;
+}
+
+.layoutinfos {
+    float: left;
+    width: 220px;
+    margin: 10px 20px 0 10px;
+    font-size: 12px;
+    font-family: Verdana;
+    text-align: justify;
+    line-height: 14px;
+}
+
+.layoutinfostitle {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid #b2b2b2;
+    font-family: Verdana;
+    padding-bottom: 4px
+}
+
+.layoutinfosdesc {
+    margin: 10px 0 0 0;
+}
+
+/*** for the main menu ***/
+#mainmenuck {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: none;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+#mainmenuck div.ck_button {
+    padding: 0 5px;
+    margin: 0;
+    float: left;
+    text-align: center;
+    font-size: 12px;
+    color: #c1c1c1;
+}
+
+#mainmenuck div.ck_button:hover {
+    box-shadow: none;
+}
+
+#mainmenuck span.infotipdesc {
+    display: block;
+    text-align: left;
+    font-size: 11px;
+    color: #d8d8d8;
+    margin: 5px;
+    padding: 0;
+    height: 25px;
+}
+
+#mainmenuck div.ck_button.expert > a {
+    color: #3DE5DF;
+}
+
+#elementscontainer .expert {
+    color: #3DE5DF !important;
+}
+
+#mainmenuck div.ck_button.noeditor > a {
+    color: red;
+}
+
+#mainmenuck div.ck_button a {
+    display: block;
+    margin: 5px;
+    padding: 0;
+    font-size: 12px;
+    text-align: center;
+    color: #c1c1c1;
+    height: 25px;
+    color: #c1c1c1;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+    text-transform: none;
+    background-position: 0px 2px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#mainmenuck div.ck_button a:hover {
+    color: #fff;
+}
+
+#showthemes {
+    background: #9e9e9e url(../images/fondthemes.png) left top repeat-x;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: none;
+}
+
+.themethumb {
+    float :left;
+    margin: 10px 5px 5px 5px;
+    cursor: pointer;
+}
+
+.themethumb img {
+    border: 1px solid transparent;
+}
+
+.themethumb:hover > img {
+    box-shadow: 0px 0px 5px #3399ff;
+    border: 1px solid #3399ff;
+}
+
+.themeindice {
+    text-align: center;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    height: 10px;
+    line-height: 10px;
+    display: none;
+}
+
+#mainmenuck div.ck_button.big a {
+    display: block;
+    float: right;
+    width: 60px;
+    height: 45px;
+    color: #c1c1c1;
+    padding-top: 25px;
+    text-align: center;
+    margin: 10px 6px 0 0;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#mainmenuck div.ck_button.big a:hover {
+    color: #fff;
+}
+
+.ck_buttons_right {
+    float: right;
+}
+
+#mainmenuck div.ck_button a.ckcanceltemplate {
+    background-image: url(../images/cancel.png);
+}
+
+#mainmenuck div.ck_button a.ckcanceltemplate:hover {
+    background-image: url(../images/cancel_hover.png);
+}
+
+#mainmenuck div.ck_button a.cksavetemplate {
+    /*padding: 0 0 0 25px;*/
+    width: 75px;
+    background-image: url(../images/validate.png);
+}
+
+#mainmenuck div.ck_button a.cksavetemplate:hover {
+    background-image: url(../images/validate_hover.png);
+}
+
+#mainmenuck div.ck_button a.ckthemes {
+    background-image: url(../images/themes_button.png);
+}
+
+#mainmenuck div.ck_button.active a.ckthemes {
+    background-image: url(../images/themes_button_active.png);
+}
+
+#mainmenuck div.ck_button a.ckexpert {
+    background-image: url(../images/expert_button.png);
+}
+
+#mainmenuck div.ck_button.expert a.ckexpert {
+    background-image: url(../images/expert_button_active.png);
+}
+
+/*** Manage dialog texts ***/
+.errorck {
+    color: red;
+}
+
+.successck {
+    color: green;
+}
+
+p.errorck {
+    margin: 0;
+    padding: 0;
+}
+
+p.successck {
+    margin: 0;
+    padding: 0;
+}
+
+/*-------- MENUSTYLES -----------------*/
+.menupaneblock {
+    text-align: left;
+    float: left;
+}
+
+.menustyles {
+    background: #fff;
+}
+
+.menustyles .inputbox, .menustyles .inputboxfake,
+#elementscontainer .inputbox, #elementsmenu .inputbox, #infos_code .inputbox {
+    padding: 2px;
+    width: 35px;
+    font-size : 12px !important;
+    moz-border-radius: 0px !important;
+    -o-border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
+    border-radius: 0px !important;
+    display: inline;
+    float: none;
+    margin: 2px;
+    border-top: 1px solid #a6a6a6 !important;
+    border-left: 1px solid #a6a6a6 !important;
+    border-right: 1px solid #a6a6a6 !important;
+    border-bottom: 1px solid #a6a6a6 !important;
+    height: 15px;
+    color: #000;
+    background : #fff;
+    font-weight: normal !important;
+    box-shadow: none !important;
+}
+
+#elementscontainer .inputbox.invalid {
+    border: 1px solid red !important;
+}
+
+input[disabled ], #elementscontainer .inputbox[disabled ], #elementsmenu .inputbox[disabled ], #infos_code .inputbox[disabled ] {
+    border: 1px dotted #bcbcbc !important;
+}
+
+
+.menustyles select.inputbox, #elementsmenu select.inputbox, #infos_code select.inputbox, #elementscontainer select.inputbox,
+.menustyles input[type="file"].inputbox, #elementsmenu input[type="file"].inputbox, #infos_code input[type="file"].inputbox, #elementscontainer  input[type="file"].inputbox {
+    height: 22px;
+}
+
+#blocselectidcont .inputbox {
+    width: 93px;
+}
+
+#infos_code label {
+    display: inline-block;
+    width: 180px;
+    padding: 2px;
+    margin: 2px;
+}
+
+.menupanetitle {
+    font-weight: bold;
+    color: #000;
+    padding: 3px;
+}
+
+.menustyles input[type="radio"], input[type="checkbox"] {
+    border: none;
+}
+
+.menustyles img, #elementsmenu img {
+    float: none !important;
+    margin : 0 !important;
+    vertical-align: top;
+}
+
+.menustylesblock {
+    float: left;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+}
+
+.menustylesblocktitle {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 27px;
+    padding: 0 0 0 10px;
+    height: 29px;
+    color: #6f6f6f;
+    background: #3c3c3c url(../images/barre_titres_bg.png) left bottom repeat-x;
+    cursor: pointer;
+}
+
+.menustylesblocktitle:before {
+    background: url(../images/barre_titres_arrow_right.png) left center no-repeat;
+    display: block;float:left;
+    width: 15px;
+    height: 29px;
+    content: " ";
+    margin: 0 2px;
+}
+
+.menustylesblocktitle.open:before {
+    background: url(../images/barre_titres_arrow_bottom.png) center center no-repeat;
+}
+
+.menustylesblocktitle.open {
+    color: #999;
+}
+
+.menustylesblockaccordion {
+    padding: 10px;
+}
+
+.menulink {
+    float: left;
+    padding: 5px 10px;
+    margin: 5px;
+    border-bottom: 2px solid #eee;
+    color: #333;
+    cursor: pointer;
+}
+
+.menulink:hover, .menulink.current {
+    border-bottom: 2px solid #555;
+    color: #000;
+}
+
+.menustyleslink, .menulink2 {
+    float: left;
+    padding: 5px 10px;
+    margin: 5px;
+    border-right: 1px solid #ddd;
+    cursor: pointer;
+    color: #a6a6a6;
+}
+
+.menustyleslinkdesc {
+    text-align: center;
+    font-size: 10px;
+    color: #a6a6a6;
+    line-height: 10px;
+}
+
+.menustyleslink:hover, .menustyleslink.current,
+.menulink2:hover, .menulink2.current {
+    color: #000;
+}
+
+.ckbuttonstyle {
+    padding: 2px 5px;
+    margin: 3px;
+    background: #3d3d3d;
+    border-radius: 3px;
+    color: #e1e1e1;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.ckbuttonstyle:hover {
+    background: #000;
+    color: #fff;
+}
+
+/*-------- MODULES MANAGER -----------------*/
+
+#modulesmanager {
+    border: 1px solid #3399ff;
+    float: left;
+    min-width: 616px;
+}
+
+#modulesmanagertitle {
+    text-transform: uppercase;
+    color: #3399ff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.modulenumberselect {
+    float: left;
+    width: 21px;
+    height: 16px;
+    margin: 0 5px;
+    padding: 0px;
+    background: #eee;
+    border: 1px solid  #cacaca;
+    color: #cacaca;
+    font-size: 12px;
+    text-align: center;
+	cursor: pointer;
+    line-height: 16px;
+    font-weight: bold;
+}
+
+.modulenumberselect.selected {
+    background: #3399ff;
+    border: 1px solid #000;
+    color: #000;
+}
+
+.modulemanager {
+    float: left;
+}
+
+.modulemanager > div.inner {
+    margin: 5px;
+    background: #fff;
+    border: 1px solid #999;
+    height: 50px;
+    background: #fff url(../images/lock_open.png) center center no-repeat;
+}
+
+.modulemanager > div.inner.locked {
+    background: #c2e0ff url(../images/lock.png) center center no-repeat;
+}
+
+.modulemanagercontainer {
+
+}
+
+.modulemanagercontainer.n5 .modulemanager {
+    width: 20%;
+    margin: 20px 0 5px 0;
+}
+
+.modulemanagercontainer.n4 .modulemanager {
+    width: 25%;
+    margin-top: 20px;
+}
+
+.modulemanagercontainer.n3 .modulemanager {
+    width: 33.333333%;
+    margin-top: 20px;
+}
+
+.modulemanagercontainer.n2 .modulemanager {
+    width: 50%;
+}
+
+.modulemanager .moduleenabled {
+    width: 90%;
+    color: green;
+    border: 1px solid green;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 14px;
+    text-align: center;
+}
+
+input.modulewidthselect {
+    width: 25px;
+    height: 17px;
+    border: 1px solid #a6a6a6;
+    float: none;
+    margin: 0 auto;
+}
+
+.modulewidthselectcont {
+    width: 55px;
+    line-height: 17px;
+    background: #fff;
+    float: none;
+    margin: 0 auto;
+    padding: 0 2px;
+    position: relative;
+    z-index: 10;
+}
+.modulewidthselectcont input.inputbox {
+    width: 25px !important;
+}
+
+.modulewidth {
+    margin: -17px 6px 0 6px;
+}
+
+.modulemanagerheader {
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0;
+    color :#000;
+    float: left;
+}
+
+.modulewidth_barleft {
+    width: 50%;
+    height: 17px;
+    float: left;
+    background: url(../images/modulewidth_barleft.png) left center no-repeat;
+}
+
+.modulewidth_barright {
+    width: 50%;
+    height: 17px;
+    float: right;
+    background: url(../images/modulewidth_barright.png) right center no-repeat;
+}
+
+/*-------- MAINCONTENT MANAGER -----------------*/
+
+.candisable {
+    position: relative;
+}
+
+#maincontentmanager {
+    border: 1px solid #3399ff;
+    float: left;
+    min-width: 616px;
+}
+
+#maincontentmanagertitle {
+    text-transform: uppercase;
+    color: #3399ff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.maincontentmanagerbloctitle {
+    text-transform: uppercase;
+    color: #3399ff;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+}
+
+.maincontentmanager {
+    min-width: 120px;
+    border: 1px solid #000;
+    background: #fff;
+    margin: 5px;
+}
+
+.maincontentmanager.disabled {
+    border: 1px dashed #ccc;
+}
+
+.maincontentmanager.disabled .maincontentmanagerbloctitle {
+    color: #ccc;
+}
+
+#maincontentmanager_left {
+    height: 364px;
+    width: 140px;
+}
+
+#maincontentmanager_main {
+    height: 350px;
+}
+
+#maincontentmanager_right {
+    height: 239px;
+    width: 140px;
+}
+
+#maincontentmanager_content {
+    height: 110px;
+    width: 300px;
+}
+
+#maincontentmanager_centertop, #maincontentmanager_centerbottom, #maincontentmanager_maintop, #maincontentmanager_mainbottom {
+    height: 50px;
+}
+
+.blocwidthselect {
+    width: 38px !important;
+    height: 17px !important;
+    float: left !important;
+    border: 1px solid #a6a6a6 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #000 !important;
+    border-radius: 0 !important;
+}
+
+.columnwidth_barleft {
+    width: 48px;
+    height: 17px;
+    margin-right: 2px;
+    float: left;
+    background: url(../images/columnwidth_barleft.png) left center no-repeat;
+}
+.columnwidth_barright {
+    width: 48px;
+    height: 17px;
+    margin-left: 2px;
+    float: left;
+    background: url(../images/columnwidth_barright.png) right center no-repeat;
+}
+
+.contentwidth_barleft {
+    width: 128px;
+    height: 17px;
+    margin-right: 2px;
+    float: left;
+    background: url(../images/contentwidth_barleft.png) left center no-repeat;
+}
+
+.contentwidth_barright {
+    width: 128px;
+    height: 17px;
+    margin-left: 2px;
+    float: left;
+    background: url(../images/contentwidth_barright.png) right center no-repeat;
+}
+
+.columnwidthtitle {
+    text-align: center;
+    color: #666666;
+    font-size: 12px;
+}
+
+/*-------- BLOCK SELECTION MANAGER -----------------*/
+
+.blocselect {
+    width: 199px;
+    height: 41px;
+    margin: 10px;
+    float: left;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.blocselecttitle {
+    text-align: left;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: -20px;
+}
+
+.blocselect:hover {
+    border: 1px solid #ccc;
+}
+
+.blocselect.selected {
+    border: 1px solid #3399ff;
+}
+
+.blocselect.singleModule {
+    background: url(../images/selection_module.png) center center no-repeat;
+}
+
+.blocselect.flexiblemodules {
+    background: url(../images/selection_modules.png) center center no-repeat;
+}
+
+.blocselect.maincontent {
+    background: url(../images/selection_contenu.png) center center no-repeat;
+}
+
+.blocselect.horizMenu {
+    background: url(../images/selection_menu.png) center center no-repeat;
+}
+
+.blocselect.custombloc {
+    background: url(../images/selection_custom.png) center center no-repeat;
+}
+
+.blocselect.banner {
+    background: url(../images/selection_banner.png) center center no-repeat;
+}
+
+
+/********************************
+*    =  mooRainbow              *
+*       color picker            *
+********************************/
+
+/***
+ *  - mooRainbow: defaultCSS
+ * author: w00fz <w00fzIT@gmail.com>
+*/
+
+.colorPicker {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.moor-box {
+    width: 230px;
+    height: 270px;
+    border: 1px solid #636163;
+    background-color: #f9f9f9;
+    z-index: 11000 !important;
+    font-family: Verdana;
+    font-size: 12px;
+    color: #000;
+}
+.moor-overlayBox {
+    width: 150px; /* Width and Height of the overlay must be setted here: default 256x256 */
+    height: 150px;
+    margin-top: 9px;
+    margin-left: 9px;
+    border: 1px solid #000;
+}
+.moor-slider {
+    border: 1px solid #000;
+    margin-top: 9px;
+    margin-left: 170px;
+    width: 19px; /* if you want a bigger or smaller slider... */
+    height: 150px;
+}
+.moor-colorBox {
+    border: 1px solid #000;
+    width: 24px;
+    height: 38px;
+    margin-top: 8px;
+    margin-left: 199px;
+}
+.moor-currentColor { /* Bottom Box Color, the backup one */
+    margin-top: 9px;
+    margin-left: 200px;
+    width: 24px;
+    height: 19px;
+}
+.moor-okButton {
+    font-weight: bold;
+    font-size: 11px;
+    margin-top: 235px;
+    margin-left: 8px;
+    background: #e6e6e6;
+    height: 23px;
+    border: 1px solid #d6d6d6;
+    border-left-color: #f5f5f5;
+    border-top-color: #f5f5f5;
+}
+
+.moor-cleaner,.moor-copy,.moor-paste {
+    font-weight: bold;
+    font-size: 11px;
+    margin-top: 235px;
+    margin-left: 65px;
+    background: #e6e6e6;
+    height: 23px;
+    border: 1px solid #d6d6d6;
+    border-left-color: #f5f5f5;
+    border-top-color: #f5f5f5;
+}
+
+.moor-copy{
+    margin-top: 235px;
+    margin-left: 120px;
+}
+
+.moor-paste{
+    margin-top: 235px;
+    margin-left: 170px;
+}
+
+#mooRainbow label {
+
+}
+/* Following are just <label> */
+.moor-rLabel {
+    margin-top: 170px;
+    margin-left: 10px;
+}
+.moor-gLabel {
+    margin-top: 170px;
+    margin-left: 70px;
+}
+.moor-bLabel {
+    margin-top: 170px;
+    margin-left: 130px;
+}
+.moor-HueLabel {
+    margin-top: 190px;
+    margin-left: 10px;
+}
+span.moor-ballino { /* Style hue ° (degree) !! */
+    margin-top: 190px;
+    margin-left: 70px;
+    display: none;
+}
+.moor-SatuLabel {
+    margin-top: 190px;
+    margin-left: 70px;
+}
+.moor-BrighLabel {
+    margin-top: 190px;
+    margin-left: 130px;
+}
+.moor-hexLabel {
+    margin-top: 210px;
+    margin-left: 80px;
+}
+
+/* <input> */
+.moor-rInput, .moor-gInput, .moor-bInput, .moor-HueInput, .moor-SatuInput, .moor-BrighInput {
+    width: 30px;
+}
+.moor-hexInput {
+    width: 55px;
+}
+.moor-cursor {
+    background-image: url(../images/moorainbow/moor_cursor.gif);
+    width: 12px;
+    height: 12px;
+}
+.moor-arrows {
+    background-image: url(../images/moorainbow/moor_arrows.gif);
+    top: 9px;
+    left: 161px;
+    width: 41px;
+    height: 9px;
+}
+.moor-chooseColor { /* Top Box Color, the choosen one */
+    margin-top: 28px;
+    margin-left: 200px;
+    width: 24px;
+    height: 19px;
+}
+
+
+/*** responsive popup ***/
+
+div.blocresolution {
+	float: left;
+	margin: 0 10px;
+}
+
+.resolution-title {
+	text-align: left;
+	color: #000;
+	font-size: 13px;
+	font-weight: bold;
+    min-height: 60px;
+    padding: 15px 0 0 85px;
+}
+
+#ckresponsive1 .resolution-title {
+    background: url(../images/mobile/phone_portrait.png) 30px 15px no-repeat;
+}
+
+#ckresponsive2 .resolution-title {
+    background: url(../images/mobile/phone_landscape.png) 20px 20px no-repeat;
+}
+
+#ckresponsive3 .resolution-title {
+    background: url(../images/mobile/tablet_portrait.png) 15px 10px no-repeat;
+}
+
+#ckresponsive4 .resolution-title {
+    background: url(../images/mobile/tablet_landscape.png) 15px 10px no-repeat;
+}
+
+#ckresponsive3 {
+    clear: both;
+}
+
+.responsive.ckbloc {
+	width: 300px;
+	height: 60px;
+	margin: 2px;
+	padding: 5px 5px 35px 5px;
+	color: #0A71A5;
+	text-align: center;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 10px;
+	background: url(../images/mobile/module_default.png) center bottom no-repeat;
+}
+
+.responsive.ckbloc:hover {
+	background-color: #666;
+	cursor: pointer;
+}
+
+.responsive.horiznav {
+	background: url(../images/mobile/menu_default.png) center center no-repeat;
+}
+.responsive.horiznav[ckmobile=mobile_default] {background-image: url(../images/mobile/menu_default.png)}
+.responsive.horiznav[ckmobile=mobile_hide] {background-image: url(../images/mobile/menu_hide.png)}
+.responsive.horiznav[ckmobile=mobile_notaligned] {background-image: url(../images/mobile/menu_not_aligned.png)}
+.responsive.horiznav[ckmobile=mobile_alignhalf] {background-image: url(../images/mobile/menu_2x2.png)}
+
+.responsive.singlemodule {
+	background: url(../images/mobile/module_default.png) center center no-repeat;
+}
+.responsive.singlemodule[ckmobile=mobile_default] {background-image: url(../images/mobile/module_default.png)}
+.responsive.singlemodule[ckmobile=mobile_hide] {background-image: url(../images/mobile/module_hide.png)}
+
+
+.responsive.flexiblemodules {
+	background: url(../images/mobile/modules_default.png) center center no-repeat;
+}
+.responsive.flexiblemodules[ckmobile=mobile_default] {background-image: url(../images/mobile/modules_default.png)}
+.responsive.flexiblemodules[ckmobile=mobile_hide] {background-image: url(../images/mobile/modules_hide.png)}
+.responsive.flexiblemodules[ckmobile=mobile_notaligned] {background-image: url(../images/mobile/modules_not_aligned.png)}
+.responsive.flexiblemodules[ckmobile=mobile_alignhalf] {background-image: url(../images/mobile/modules_2x2.png)}
+
+.responsive.mainbanner {
+	background: url(../images/mobile/banner_default.png) center center no-repeat;
+}
+.responsive.mainbanner[ckmobile=mobile_hide] {background-image: url(../images/mobile/banner_hide.png)}
+.responsive.mainbanner[ckmobile=mobile_notaligned] {background-image: url(../images/mobile/banner_not_aligned.png)}
+
+.responsive.maincontent {
+	background: url(../images/mobile/content_default.png) center center no-repeat;
+}
+.responsive.maincontent[ckmobile=mobile_default] {background-image: url(../images/mobile/content_default.png)}
+.responsive.maincontent[ckmobile=mobile_notaligned] {background-image: url(../images/mobile/content_not_aligned.png)}
+.responsive.maincontent[ckmobile=mobile_lefttop] {background-image: url(../images/mobile/content_lefttop.png);}
+.responsive.maincontent[ckmobile=mobile_lefthidden] {background-image: url(../images/mobile/content_lefthidden.png);}
+.responsive.maincontent[ckmobile=mobile_rightbottom] {background-image: url(../images/mobile/content_rightbottom.png);}
+.responsive.maincontent[ckmobile=mobile_righthidden] {background-image: url(../images/mobile/content_righthidden.png);}
+
+#mobile_lefttop, #mobile_lefthidden, #mobile_rightbottom, #mobile_righthidden {display: none;}
+
+div[ckclass~=mainbanner] #mobile_default {background-image: url(../images/mobile/banner_default.png);}
+div[ckclass~=mainbanner] #mobile_hide {background-image: url(../images/mobile/banner_hide.png);}
+div[ckclass~=mainbanner] #mobile_alignhalf {display: none;}
+div[ckclass~=mainbanner] #mobile_notaligned {background-image: url(../images/mobile/banner_not_aligned.png);}
+
+div[ckclass~=flexiblemodules] #mobile_default {background-image: url(../images/mobile/modules_default.png);}
+div[ckclass~=flexiblemodules] #mobile_hide {background-image: url(../images/mobile/modules_hide.png);}
+div[ckclass~=flexiblemodules] #mobile_alignhalf {background-image: url(../images/mobile/modules_2x2.png);}
+div[ckclass~=flexiblemodules] #mobile_notaligned {background-image: url(../images/mobile/modules_not_aligned.png);}
+
+div[ckclass~=horiznav] #mobile_default {background-image: url(../images/mobile/menu_default.png);}
+div[ckclass~=horiznav] #mobile_hide {background-image: url(../images/mobile/menu_hide.png);}
+div[ckclass~=horiznav] #mobile_alignhalf {background-image: url(../images/mobile/menu_2x2.png);}
+div[ckclass~=horiznav] #mobile_notaligned {background-image: url(../images/mobile/menu_not_aligned.png);}
+
+div[ckclass~=singlemodule] #mobile_default {background-image: url(../images/mobile/module_default.png);}
+div[ckclass~=singlemodule] #mobile_hide {background-image: url(../images/mobile/module_hide.png);}
+div[ckclass~=singlemodule] #mobile_alignhalf {display: none;}
+div[ckclass~=singlemodule] #mobile_notaligned {display: none;}
+
+div[ckclass~=maincontent] #mobile_lefttop,
+div[ckclass~=maincontent] #mobile_lefthidden,
+div[ckclass~=maincontent] #mobile_rightbottom,
+div[ckclass~=maincontent] #mobile_righthidden {display: block;}
+
+div[ckclass~=maincontent] #mobile_default {background-image: url(../images/mobile/content_default.png);}
+div[ckclass~=maincontent] #mobile_hide {display: none;}
+div[ckclass~=maincontent] #mobile_alignhalf {display: none;}
+div[ckclass~=maincontent] #mobile_notaligned {background-image: url(../images/mobile/content_not_aligned.png);}
+div[ckclass~=maincontent] #mobile_lefttop {background-image: url(../images/mobile/content_lefttop.png);}
+div[ckclass~=maincontent] #mobile_lefthidden {background-image: url(../images/mobile/content_lefthidden.png);}
+div[ckclass~=maincontent] #mobile_rightbottom {background-image: url(../images/mobile/content_rightbottom.png);}
+div[ckclass~=maincontent] #mobile_righthidden {background-image: url(../images/mobile/content_righthidden.png);}
+
+/*** message systeme ***/
+.alert-message {
+    margin: 5px;
+    padding: 5px;
+    background: #eaeaea;
+}
+
+.alert-message .close {
+    display: inline-block;
+    background: #aaa;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    line-height: 15px;
+}
+
+.alert-message .close:hover {
+    background: #ccc;
+    color: #000;
+}
+
+/* ---------------------------------------
+	Standard styles formatting
+	created with Template Creator
+        on http://www.template-creator.com
+-----------------------------------------*/
+
+
+html {
+	height: 101%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, .contentheading, .componentheading {
+	padding: 3px 0;
+	margin: 0;
+	line-height: 1.2;
+	font-weight: bold;
+	font-style: normal;
+}
+h1, .componentheading {
+	font-size: 1.75em;
+}
+h2, .contentheading {
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 1.25em;
+}
+h4 {
+	font-size: 1em;
+}
+
+ul, ol {
+	padding: .75em 0 .75em 0;
+	margin: 0 0 0 35px;
+}
+
+ul.menu {
+    margin: 0;
+}
+
+ul.menu li {
+    list-style: none;
+}
+
+p {
+	padding: 5px 0;
+}
+
+address {
+	margin: .75em 0;
+	font-style: normal;
+}
+
+a:focus {
+    outline: none;
+}
+
+img {
+	border: none;
+}
+
+em {
+	font-style: italic;
+}
+strong {
+	font-weight: bold;
+}
+
+form, fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+input, button, select {
+	vertical-align: middle;
+}
+
+.clr {
+	clear : both;
+}
+
+.container {
+	margin: 0 auto;
+}
+
+.column.center {
+    text-align: inherit;
+}

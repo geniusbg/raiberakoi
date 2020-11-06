@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" method="upgrade">
+	<name>Parallax CK</name>
+	<author>Cédric KEIFLIN</author>
+	<creationDate>Fevrier 2011</creationDate>
+	<copyright>Cédric KEIFLIN</copyright>
+	<license>GNU/GPL 3 http://www.gnu.org/licenses/gpl.html</license>
+	<authorEmail>ced1870@gmail.com</authorEmail>
+	<authorUrl>http://www.joomlack.fr</authorUrl>
+	<version>1.2.0</version>
+	<description>Module Parallax CK génère des images de fond avec mouvements.</description>	
+	<files>
+	<filename module="mod_parallaxck">mod_parallaxck.php</filename>
+	<filename>index.html</filename>
+    <filename>helper.php</filename>
+    <filename>tmpl/default.php</filename>
+    <filename>tmpl/index.html</filename>
+	<filename>images/image1ck.png</filename>
+	<filename>images/image2ck.png</filename>
+	<filename>images/image3ck.png</filename>
+	<filename>images/image4ck.gif</filename>
+	<filename>images/index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+		<fieldset name="advanced">
+ 
+		<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="CSS class suffix for the module" />
+		<field name="imageheight" type="text" default="200" label="Hauteur du module" description="Hauteur des images en px" size="10" />
+		<field name="imagewidth" type="text" default="auto" label="Largeur du module" description="Largeur visible des images en px" size="10" />
+		<field name="spacer1" type="spacer" default="" label="Image 1" description="Image la plus profonde niveau 1" />
+		<field name="spacer11" type="spacer" default="Image 1" label="Image 1" description="Image la plus profonde niveau 1" />
+		<field name="image1use" type="radio" default="1" label="Utiliser l'image 1" description=""  >
+			<option value="1">Oui</option>
+			<option value="0">Non</option>		
+		</field>
+		<field name="image1" type="imagelist" default="image1ck.png" label="Selectionner une image" description="Image à utiliser pour le background" directory="modules/mod_parallaxck/images" exclude="" stripext="" />
+		<field name="image1automove" type="radio" default="1" label="Mouvement automatique" description="L'image bouge toute seule à l'infini" >
+			<option value="1">Oui</option>
+			<option value="0">Non</option>		
+		</field>
+		<field name="image1speed" type="text" default="50000" label="Vitesse automatique" description="Vitesse de défilement automatique de l'image" size="10" />
+		<field name="image1mousespeed" type="text" default="2" label="Vitesse de la souris" description="Vitesse de défilement par rapport à la souris (si Mouvement automatique sur Non)" size="10" />
+		<field name="image1direction" type="radio" default="1" label="Direction" description="Direction du mouvement" >
+			<option value="-1">Gauche (inverse)</option>
+			<option value="1">Droite (normal)</option>		
+		</field>
+		<field name="image1offsetx" type="text" default="1000" label="Offset en x" description="Décalage horizontal pour le positionnement de l'image" size="10" />
+		
+		<field name="spacer2" type="spacer" default="" label="Image 2" description="Image de niveau 2" />
+		<field name="spacer21" type="spacer" default="Image 2" label="Image 2" description="Image la plus profonde niveau 2" />
+		<field name="image2use" type="radio" default="1" label="Utiliser l'image 2" description=""  >
+			<option value="1">Oui</option>
+			<option value="0">Non</option>		
+		</field>
+		<field name="image2" type="imagelist" default="image2ck.png" label="Selectionner une image" description="Image à utiliser pour le background" directory="modules/mod_parallaxck/images" exclude="" stripext="" />
+		<field name="image2automove" type="radio" default="0" label="Mouvement automatique" description="L'image bouge toute seule à l'infini" >
+			<option value="1">Oui</option>
+			<option value="0">Non</option>		
+		</field>
+		<field name="image2speed" type="text" default="5000" label="Vitesse automatique" description="Vitesse de défilement automatique de l'image" size="10" />
+		<field name="image2mousespeed" type="text" default="3" label="Vitesse de la souris" description="Vitesse de défilement par rapport à la souris (si Mouvement automatique sur Non)" size="10" />
+		<field name="image2direction" type="radio" default="1" label="Direction" description="Direction du mouvement" >
+			<option value="-1">Gauche (inverse)</option>
+			<option value="1">Droite (normal)</option>		
+		</field>
+		<field name="image2offsetx" type="text" default="1000" label="Offset en x" description="Décalage horizontal pour le positionnement de l'image" size="10" />
+		
+		<field name="spacer3" type="spacer" default="" label="Image 3" description="Image de niveau 3" />
+		<field name="spacer31" type="spacer" default="Image 3" label="Image 3" description="Image de niveau 3" />
+		<field name="image3use" type="radio" default="1" label="Utiliser l'image 3" description=""  >
+			<option value="1">Oui</option>
+			<option value="0">Non</option>		
+		</field>
+		<field name="image3" type="imagelist" default="image3ck.png" label="Selectionner une image" description="Image à utiliser pour le background" directory="modules/mod_parallaxck/images" exclude="" stripext="" />
+		<field name="image3automove" type="radio" default="0" label="Mouvement automatique" description="L'image bouge toute seule à l'infini" >
+			<option value="1">Oui</option>
+			<option value="0">Non</option>		
+		</field>
+		<field name="image3speed" type="text" default="5000" label="Vitesse automatique" description="Vitesse de défilement automatique de l'image" size="10" />
+		<field name="image3mousespeed" type="text" default="1" label="Vitesse de la souris" description="Vitesse de défilement par rapport à la souris (si Mouvement automatique sur Non)" size="10" />
+		<field name="image3direction" type="radio" default="-1" label="Direction" description="Direction du mouvement" >
+			<option value="-1">Gauche (inverse)</option>
+			<option value="1">Droite (normal)</option>		
+		</field>
+		<field name="image3offsetx" type="text" default="1000" label="Offset en x" description="Décalage horizontal pour le positionnement de l'image" size="10" />
+		
+		<field name="spacer4" type="spacer" default="" label="Image 4" description="Image de niveau 4" />
+		<field name="spacer41" type="spacer" default="Image 4" label="Image 4" description="Image de niveau 4" />
+		<field name="image4use" type="radio" default="1" label="Utiliser l'image 4" description=""  >
+			<option value="1">Oui</option>
+			<option value="0">Non</option>		
+		</field>
+		<field name="image4" type="imagelist" default="image4ck.gif" label="Selectionner une image" description="Image à utiliser pour le background" directory="modules/mod_parallaxck/images" exclude="" stripext="" />
+		<field name="image4automove" type="radio" default="1" label="Mouvement automatique" description="L'image bouge toute seule à l'infini" >
+			<option value="1">Oui</option>
+			<option value="0">Non</option>		
+		</field>
+		<field name="image4speed" type="text" default="50000" label="Vitesse automatique" description="Vitesse de défilement automatique de l'image" size="10" />
+		<field name="image4mousespeed" type="text" default="2" label="Vitesse de la souris" description="Vitesse de défilement par rapport à la souris (si Mouvement automatique sur Non)" size="10" />
+		<field name="image4direction" type="radio" default="-1" label="Direction" description="Direction du mouvement" >
+			<option value="-1">Gauche (inverse)</option>
+			<option value="1">Droite (normal)</option>		
+		</field>
+		<field name="image4offsetx" type="text" default="1000" label="Offset en x" description="Décalage horizontal pour le positionnement de l'image" size="10" />
+		
+		<field name="spacer5" type="spacer" default="" label="Image 5" description="Image de niveau 5" />
+		<field name="spacer51" type="spacer" default="Image 5" label="Image 5" description="Image de niveau 5" />
+		<field name="image5use" type="radio" default="1" label="Utiliser l'image 5" description=""  >
+			<option value="1">Oui</option>
+			<option value="0">Non</option>		
+		</field>
+		<field name="image5" type="imagelist" default="image5ck.png" label="Selectionner une image" description="Image à utiliser pour le background" directory="modules/mod_parallaxck/images" exclude="" stripext="" />
+		<field name="image5automove" type="radio" default="0" label="Mouvement automatique" description="L'image bouge toute seule à l'infini" >
+			<option value="1">Oui</option>
+			<option value="0">Non</option>		
+		</field>
+		<field name="image5speed" type="text" default="5000" label="Vitesse automatique" description="Vitesse de défilement automatique de l'image" size="10" />
+		<field name="image5mousespeed" type="text" default="2" label="Vitesse de la souris" description="Vitesse de défilement par rapport à la souris (si Mouvement automatique sur Non)" size="10" />
+		<field name="image5direction" type="radio" default="1" label="Direction" description="Direction du mouvement" >
+			<option value="-1">Gauche (inverse)</option>
+			<option value="1">Droite (normal)</option>		
+		</field>
+		<field name="image5offsetx" type="text" default="1000" label="Offset en x" description="Décalage horizontal pour le positionnement de l'image" size="10" />
+	</fieldset>
+ </fields>
+ </config>
+
+</extension>

@@ -1,0 +1,4 @@
+title=After the sun
+desc=Click on this image to open it into a Lightbox
+target=lightbox
+link=modules/mod_playlistck/images/slides2/leaf.jpg

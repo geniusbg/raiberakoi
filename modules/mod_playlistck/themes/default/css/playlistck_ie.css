@@ -1,0 +1,34 @@
+/* IE specific css for Slideshow CK */
+.playlistck_wrap:after {
+	background: none;
+}
+
+.playlistck_wrap .playlistck_pag .playlistck_pag_ul li {
+    float:left !important;
+}
+
+div.playlistck_thumbs_cont {
+	background: transparent;
+}
+
+
+.playlistck_caption {
+	bottom: 10px;
+	display: block;
+	position: relative !important;
+	/*width: 100%;*/
+}
+.playlistck_caption > div {
+	padding: 10px 20px;
+}
+
+.playlistck_caption {
+	color: #fff;
+	margin-bottom: 35px;
+}
+.playlistck_caption > div {
+	background: #000;
+	background: rgba(0,0,0, 0.7);
+	border-radius: 0 5px 5px 0;
+	-moz-border-radius: 0 5px 5px 0;
+}

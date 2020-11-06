@@ -1,0 +1,2 @@
+title=Nice landscape
+desc=Imagine that you are on holidays

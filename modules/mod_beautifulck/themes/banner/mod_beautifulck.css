@@ -1,0 +1,69 @@
+.beautifulck.banner .beautifulckbg, .beautifulck.banner {
+	position: relative;
+	z-index: 100;
+}
+
+.beautifulck.banner .beautifulckbg {
+	height: 0;
+}
+
+.beautifulck.banner .beautifulckbgcenter {
+	position: absolute;
+	z-index: 102;
+        height: 45px;
+	width: 196px;
+        left: -12px;
+	top: -10px;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+.beautifulck.banner .beautifulckbgcentercolor {
+	height: 31px;
+	width: 100%;
+	position: absolute;
+	z-index: 101;
+	right: 0;
+	top: -3px;
+}
+
+.beautifulck.banner.pink .beautifulckbgcentercolor { background: #bf0067; }
+.beautifulck.banner.red .beautifulckbgcentercolor { background: #CD0000; }
+.beautifulck.banner.orange .beautifulckbgcentercolor { background: #FB7A00; }
+.beautifulck.banner.yellow .beautifulckbgcentercolor { background: #F0A20E; }
+.beautifulck.banner.green .beautifulckbgcentercolor { background: #7BA915; }
+.beautifulck.banner.blue .beautifulckbgcentercolor { background: #0566ad; }
+.beautifulck.banner.grey .beautifulckbgcentercolor { background: #696969; }
+
+
+.beautifulck.banner.pink .beautifulckbgcenter, .beautifulck.banner.pink .beautifulckbgright {background-image: url(images/banner_pink.png);}
+.beautifulck.banner.red .beautifulckbgcenter, .beautifulck.banner.red .beautifulckbgright {background-image: url(images/banner_red.png);}
+.beautifulck.banner.orange .beautifulckbgcenter, .beautifulck.banner.orange .beautifulckbgright {background-image: url(images/banner_orange.png);}
+.beautifulck.banner.yellow .beautifulckbgcenter, .beautifulck.banner.yellow .beautifulckbgright {background-image: url(images/banner_yellow.png);}
+.beautifulck.banner.green .beautifulckbgcenter, .beautifulck.banner.green .beautifulckbgright {background-image: url(images/banner_green.png);}
+.beautifulck.banner.blue .beautifulckbgcenter, .beautifulck.banner.blue .beautifulckbgright {background-image: url(images/banner_blue.png);}
+.beautifulck.banner.grey .beautifulckbgcenter, .beautifulck.banner.grey .beautifulckbgright {background-image: url(images/banner_grey.png);}
+
+.beautifulck.banner .beautifulckbgright {
+	height: 45px;
+	width: 17px;
+	position: absolute;
+	z-index: 101;
+	right: -13px;
+	top: -10px;
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+.beautifulck.banner img.beautifulckbgicon {
+	position: absolute;
+	z-index: 105;
+	top: 3px;
+	left: 15px;
+}
+
+.beautifulck.banner h3 {
+	position: absolute;
+	z-index: 103;
+	border: none !important;
+}

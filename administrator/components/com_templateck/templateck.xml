@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>com_templateck</name>
+	<creationDate>April 2013</creationDate>
+	<copyright>Copyright (C) 2013. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<author>Cedric Keiflin</author>
+	<authorEmail>ced1870@gmail.com</authorEmail>
+	<authorUrl>http://www.template-creator.com</authorUrl>
+	<version>3.0.6</version>
+	<description>CK_TEMPLATECK_DESC</description>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>templateck.php</filename>
+		<filename>controller.php</filename>
+		<filename>bootstrap.css</filename>
+		<filename>default.css</filename>
+		<filename>default_rtl.css</filename>
+		<filename>pie.htc</filename>
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>fonts</folder>
+		<folder>helpers</folder>
+		<folder>images</folder>
+		<folder>img</folder>
+		<folder>language</folder>
+		<folder>media</folder>
+		<folder>models</folder>
+		<folder>projects</folder>
+		<folder>themes</folder>
+		<folder>views</folder>
+	</files>
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB/en-GB.com_templateck.ini</language>
+		<language tag="fr-FR">language/fr-FR/fr-FR.com_templateck.ini</language>
+	</languages>
+	<administration>
+		<menu>COM_TEMPLATECK</menu>
+		<files folder="administrator">
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>templateck.php</filename>
+			<folder>controllers</folder>
+			<folder>assets</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<folder>language</folder>
+		</files>
+		<languages folder="administrator">
+			<language tag="en-GB">language/en-GB/en-GB.com_templateck.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_templateck.sys.ini</language>
+			<language tag="fr-FR">language/fr-FR/fr-FR.com_templateck.ini</language>
+			<language tag="fr-FR">language/fr-FR/fr-FR.com_templateck.sys.ini</language>
+		</languages>
+	</administration>
+</extension>

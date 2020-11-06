@@ -1,0 +1,11 @@
+
+module my-mongod 1.0;
+
+require {
+	type cgroup_t;
+	type mongod_t;
+	class file { getattr open };
+}
+
+#============= mongod_t ==============
+allow mongod_t cgroup_t:file { getattr open };

@@ -1,0 +1,51 @@
+.beautifulckbg, .beautifulck {
+	position: relative;
+	z-index: 100;
+}
+
+.beautifulckbg {
+	height: 0;
+}
+
+.beautifulck.simple.pink .beautifulckbgcentercolor {background: #e144d6;}
+.beautifulck.simple.red .beautifulckbgcentercolor {background: #bf4f4f;}
+.beautifulck.simple.orange .beautifulckbgcentercolor {background: #eaa024;}
+.beautifulck.simple.yellow .beautifulckbgcentercolor {background: #e3df2b;}
+.beautifulck.simple.green .beautifulckbgcentercolor {background: #62b25f;}
+.beautifulck.simple.blue .beautifulckbgcentercolor {background: #5d70b1;}
+.beautifulck.simple.grey .beautifulckbgcentercolor {background: #646464;}
+
+.beautifulck.simple img.beautifulckbgicon {
+	position: absolute;
+	z-index: 105;
+	top: 15px;
+	left: -5px;
+}
+
+.beautifulck.simple .beautifulckbgcentercolor {
+	position: relative;
+	z-index: 101;
+	height: 40px;
+	/* width: 100%; */
+	top: 5px;
+	left: -15px;
+	margin: 0;
+}
+
+.beautifulck.simple .beautifulckbgleft {
+	position: absolute;
+	z-index: 102;
+	height: 4px;
+	width: 8px;
+	top: 45px;
+	left: -15px;
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-image: url(images/simple_ombre.png);
+}
+
+.beautifulck.simple h3 {
+	position: absolute;
+	z-index: 103;
+	border: none !important;
+}

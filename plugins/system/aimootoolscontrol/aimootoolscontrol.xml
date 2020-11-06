@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+	<name>System - aiMootoolsControl</name>
+	<author>Algis Info Grup SRL</author>
+	<creationDate>April 2012</creationDate>
+	<copyright>Copyright (C)2012 Alex Dobrin. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenseses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>alex@algis.ro</authorEmail>
+	<authorUrl>www.algisinfo.com</authorUrl>
+	<version>1.0.1</version>
+	<description><![CDATA[AIMOOTOOLSCONTROL_DESC]]></description>
+	<files>
+		<filename plugin="aimootoolscontrol">aimootoolscontrol.php</filename>
+		<filename>aimootoolscontrol/aidonate.php</filename>
+		<filename>aimootoolscontrol/index.html</filename>
+		<filename>aimootoolscontrol/mootools_1_4.js</filename>
+		<filename>aimootoolscontrol/mootools_1_3.js</filename>
+		<filename>aimootoolscontrol/mootools_1_2.js</filename>
+		<filename>aimootoolscontrol/mootools_1_12.js</filename>
+		<folder>aimootoolscontrol</folder>
+	</files>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.plg_system_aimootoolscontrol.ini</language>
+		<language tag="en-GB">en-GB.plg_system_aimootoolscontrol.sys.ini</language>
+	</languages>
+	<params addpath="/plugins/system/aimootoolscontrol">
+		<param name="donate" type="aidonate" label="You can help us keep this plugin free" description="If you think this extension helped you, you can help us keep the projects going, with a Paypal donation." />
+		<param type="spacer" />
+		<param type="spacer" default="1.0.1" label="1.0.1" />
+		<param type="spacer" default="&lt;br /&gt;" label="&lt;br /&gt;" />
+		<param name="load_plugin" type="list" default="3" label="AIMOOTOOLSCONTROL_CONTROL_MOOTOOLS" description="AIMOOTOOLSCONTROL_CONTROL_MOOTOOLS_DESC">
+			<option value="1">AIMOOTOOLSCONTROL_ONLY_IN_FRONT_END</option>
+			<option value="2">AIMOOTOOLSCONTROL_ONLY_IN_BACK_END</option>
+			<option value="3">AIMOOTOOLSCONTROL_BOTH_IN_FRONT_END_AND_BACK_END</option>
+		</param>
+		<param type="spacer" default="&lt;br /&gt;" label="&lt;br /&gt;" />
+		<param name="mootoolsids" type="text" default="/mootools.js, /mootools-uncompressed.js, /mootools-core.js, /mootools-core-uncompressed.js" label="AIMOOTOOLSCONTROL_MOOTOOLS_IDENTIFIERS" description="AIMOOTOOLSCONTROL_MOOTOOLS_IDENTIFIERS_DESC" size="70" />
+		<param name="path_mootools_1_4" type="text" default="plugins/system/aimootoolscontrol/mootools_1_4.js" label="AIMOOTOOLSCONTROL_PATH_TO_MOOTOOLS_1_4" description="AIMOOTOOLSCONTROL_PATH_TO_MOOTOOLS_1_4_DESC" size="70" />
+		<param name="path_mootools_1_3" type="text" default="plugins/system/aimootoolscontrol/mootools_1_3.js" label="AIMOOTOOLSCONTROL_PATH_TO_MOOTOOLS_1_3" description="AIMOOTOOLSCONTROL_PATH_TO_MOOTOOLS_1_3_DESC" size="70" />
+		<param name="path_mootools_1_2" type="text" default="plugins/system/aimootoolscontrol/mootools_1_2.js" label="AIMOOTOOLSCONTROL_PATH_TO_MOOTOOLS_1_2" description="AIMOOTOOLSCONTROL_PATH_TO_MOOTOOLS_1_2_DESC" size="70" />
+		<param name="path_mootools_1_12" type="text" default="plugins/system/aimootoolscontrol/mootools_1_12.js" label="AIMOOTOOLSCONTROL_PATH_TO_MOOTOOLS_1_12" description="AIMOOTOOLSCONTROL_PATH_TO_MOOTOOLS_1_12_DESC" size="70" />
+		<param type="spacer" default="&lt;br /&gt;" label="&lt;br /&gt;" />
+		<param type="spacer" default="AIMOOTOOLSCONTROL_FRONT_END_PARAMETERS" label="AIMOOTOOLSCONTROL_FRONT_END_PARAMETERS" />
+		<param type="spacer" default="&lt;br /&gt;" label="&lt;br /&gt;" />
+		<param name="f_com_mootools_1_4" type="text" default="" label="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_4" description="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_4_DESC_F" size="70" />
+		<param name="f_com_mootools_1_3" type="text" default="" label="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_3" description="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_3_DESC_F" size="70" />
+		<param name="f_com_mootools_1_2" type="text" default="" label="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_2" description="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_2_DESC_F" size="70" />
+		<param name="f_com_mootools_1_12" type="text" default="" label="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_12" description="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_12_DESC_F" size="70" />
+		<param name="f_com_no_mootools" type="text" default="" label="AIMOOTOOLSCONTROL_COMPONENTS_WITHOUT_IT" description="AIMOOTOOLSCONTROL_COMPONENTS_WITHOUT_IT_DESC_F" size="70" />
+		<param name="f_check_buffer" type="radio" default="0" label="AIMOOTOOLSCONTROL_TRIGGER_ON_PLUGIN_CODE" description="AIMOOTOOLSCONTROL_TRIGGER_ON_PLUGIN_CODE_DESC_F">
+			<option value="0">AIMOOTOOLSCONTROL_NO</option>
+			<option value="1">AIMOOTOOLSCONTROL_YES</option>
+		</param>
+		<param name="f_otherwise" type="list" default="0" label="AIMOOTOOLSCONTROL_OTHERWISE" description="AIMOOTOOLSCONTROL_OTHERWISE_DESC_F">
+			<option value="0">AIMOOTOOLSCONTROL_NO_CHANGES_ARE_MADE</option>
+			<option value="1">AIMOOTOOLSCONTROL_NOT_LOAD_MOOTOOLS</option>
+			<option value="2">AIMOOTOOLSCONTROL_LOAD_MOOTOOLS_1_12</option>
+			<option value="3">AIMOOTOOLSCONTROL_LOAD_MOOTOOLS_1_2</option>
+			<option value="4">AIMOOTOOLSCONTROL_LOAD_MOOTOOLS_1_3</option>
+			<option value="5">AIMOOTOOLSCONTROL_LOAD_MOOTOOLS_1_4</option>
+		</param>
+		<param type="spacer" default="&lt;br /&gt;" label="&lt;br /&gt;" />
+		<param type="spacer" default="AIMOOTOOLSCONTROL_BACK_END_PARAMETERS" label="AIMOOTOOLSCONTROL_BACK_END_PARAMETERS" />
+		<param type="spacer" default="&lt;br /&gt;" label="&lt;br /&gt;" />
+		<param name="b_com_mootools_1_4" type="text" default="" label="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_4" description="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_4_DESC_B" size="70" />
+		<param name="b_com_mootools_1_3" type="text" default="" label="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_3" description="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_3_DESC_B" size="70" />
+		<param name="b_com_mootools_1_2" type="text" default="" label="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_2" description="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_2_DESC_B" size="70" />
+		<param name="b_com_mootools_1_12" type="text" default="" label="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_12" description="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_12_DESC_B" size="70" />
+		<param name="b_com_no_mootools" type="text" default="" label="AIMOOTOOLSCONTROL_COMPONENTS_WITHOUT_IT" description="AIMOOTOOLSCONTROL_COMPONENTS_WITHOUT_IT_DESC_B" size="70" />
+		<param name="b_check_buffer" type="radio" default="0" label="AIMOOTOOLSCONTROL_TRIGGER_ON_PLUGIN_CODE" description="AIMOOTOOLSCONTROL_TRIGGER_ON_PLUGIN_CODE_DESC_B">
+			<option value="0">AIMOOTOOLSCONTROL_NO</option>
+			<option value="1">AIMOOTOOLSCONTROL_YES</option>
+		</param>
+		<param name="b_otherwise" type="list" default="0" label="AIMOOTOOLSCONTROL_OTHERWISE" description="AIMOOTOOLSCONTROL_OTHERWISE_DESC_B">
+			<option value="0">AIMOOTOOLSCONTROL_NO_CHANGES_ARE_MADE</option>
+			<option value="1">AIMOOTOOLSCONTROL_NOT_LOAD_MOOTOOLS</option>
+			<option value="2">AIMOOTOOLSCONTROL_LOAD_MOOTOOLS_1_12</option>
+			<option value="3">AIMOOTOOLSCONTROL_LOAD_MOOTOOLS_1_2</option>
+			<option value="4">AIMOOTOOLSCONTROL_LOAD_MOOTOOLS_1_3</option>
+			<option value="5">AIMOOTOOLSCONTROL_LOAD_MOOTOOLS_1_4</option>
+		</param>
+	</params>
+	<config>
+		<fields name="params" addfieldpath="/plugins/system/aimootoolscontrol/aimootoolscontrol">
+			<fieldset name="basic">
+				<field name="donate" type="aidonate" label="You can help us keep this plugin free" description="If you think this extension helped you, you can help us keep the projects going, with a Paypal donation." />
+				<field type="spacer" />
+				<field type="spacer" default="1.0.1" label="1.0.1" />
+				<field type="spacer" default="&lt;br /&gt;" label="&lt;br /&gt;" />
+				<field name="load_plugin" type="list" default="3" label="AIMOOTOOLSCONTROL_CONTROL_MOOTOOLS" description="AIMOOTOOLSCONTROL_CONTROL_MOOTOOLS_DESC">
+					<option value="1">AIMOOTOOLSCONTROL_ONLY_IN_FRONT_END</option>
+					<option value="2">AIMOOTOOLSCONTROL_ONLY_IN_BACK_END</option>
+					<option value="3">AIMOOTOOLSCONTROL_BOTH_IN_FRONT_END_AND_BACK_END</option>
+				</field>
+				<field type="spacer" default="&lt;br /&gt;" label="&lt;br /&gt;" />
+				<field name="mootoolsids" type="text" default="/mootools.js, /mootools-uncompressed.js, /mootools-core.js, /mootools-core-uncompressed.js" label="AIMOOTOOLSCONTROL_MOOTOOLS_IDENTIFIERS" description="AIMOOTOOLSCONTROL_MOOTOOLS_IDENTIFIERS_DESC" size="65" />
+				<field name="path_mootools_1_4" type="text" default="plugins/system/aimootoolscontrol/mootools_1_4.js" label="AIMOOTOOLSCONTROL_PATH_TO_MOOTOOLS_1_4" description="AIMOOTOOLSCONTROL_PATH_TO_MOOTOOLS_1_4_DESC" size="65" />
+				<field name="path_mootools_1_3" type="text" default="plugins/system/aimootoolscontrol/mootools_1_3.js" label="AIMOOTOOLSCONTROL_PATH_TO_MOOTOOLS_1_3" description="AIMOOTOOLSCONTROL_PATH_TO_MOOTOOLS_1_3_DESC" size="65" />
+				<field name="path_mootools_1_2" type="text" default="plugins/system/aimootoolscontrol/mootools_1_2.js" label="AIMOOTOOLSCONTROL_PATH_TO_MOOTOOLS_1_2" description="AIMOOTOOLSCONTROL_PATH_TO_MOOTOOLS_1_2_DESC" size="65" />
+				<field name="path_mootools_1_12" type="text" default="plugins/system/aimootoolscontrol/mootools_1_12.js" label="AIMOOTOOLSCONTROL_PATH_TO_MOOTOOLS_1_12" description="AIMOOTOOLSCONTROL_PATH_TO_MOOTOOLS_1_12_DESC" size="65" />
+				<field type="spacer" default="&lt;br /&gt;" label="&lt;br /&gt;" />
+				<field type="spacer" default="AIMOOTOOLSCONTROL_FRONT_END_PARAMETERS" label="AIMOOTOOLSCONTROL_FRONT_END_PARAMETERS" />
+				<field type="spacer" default="&lt;br /&gt;" label="&lt;br /&gt;" />
+				<field name="f_com_mootools_1_4" type="text" default="" label="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_4" description="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_4_DESC_F" size="65" />
+				<field name="f_com_mootools_1_3" type="text" default="" label="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_3" description="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_3_DESC_F" size="65" />
+				<field name="f_com_mootools_1_2" type="text" default="" label="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_2" description="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_2_DESC_F" size="65" />
+				<field name="f_com_mootools_1_12" type="text" default="" label="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_12" description="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_12_DESC_F" size="65" />
+				<field name="f_com_no_mootools" type="text" default="" label="AIMOOTOOLSCONTROL_COMPONENTS_WITHOUT_IT" description="AIMOOTOOLSCONTROL_COMPONENTS_WITHOUT_IT_DESC_F" size="65" />
+				<field name="f_check_buffer" type="radio" default="0" label="AIMOOTOOLSCONTROL_TRIGGER_ON_PLUGIN_CODE" description="AIMOOTOOLSCONTROL_TRIGGER_ON_PLUGIN_CODE_DESC_F">
+					<option value="0">AIMOOTOOLSCONTROL_NO</option>
+					<option value="1">AIMOOTOOLSCONTROL_YES</option>
+				</field>
+				<field name="f_otherwise" type="list" default="0" label="AIMOOTOOLSCONTROL_OTHERWISE" description="AIMOOTOOLSCONTROL_OTHERWISE_DESC_F">
+					<option value="0">AIMOOTOOLSCONTROL_NO_CHANGES_ARE_MADE</option>
+					<option value="1">AIMOOTOOLSCONTROL_NOT_LOAD_MOOTOOLS</option>
+					<option value="2">AIMOOTOOLSCONTROL_LOAD_MOOTOOLS_1_12</option>
+					<option value="3">AIMOOTOOLSCONTROL_LOAD_MOOTOOLS_1_2</option>
+					<option value="4">AIMOOTOOLSCONTROL_LOAD_MOOTOOLS_1_3</option>
+					<option value="5">AIMOOTOOLSCONTROL_LOAD_MOOTOOLS_1_4</option>
+				</field>
+				<field type="spacer" default="&lt;br /&gt;" label="&lt;br /&gt;" />
+				<field type="spacer" default="AIMOOTOOLSCONTROL_BACK_END_PARAMETERS" label="AIMOOTOOLSCONTROL_BACK_END_PARAMETERS" />
+				<field type="spacer" default="&lt;br /&gt;" label="&lt;br /&gt;" />
+				<field name="b_com_mootools_1_4" type="text" default="" label="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_4" description="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_4_DESC_B" size="65" />
+				<field name="b_com_mootools_1_3" type="text" default="" label="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_3" description="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_3_DESC_B" size="65" />
+				<field name="b_com_mootools_1_2" type="text" default="" label="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_2" description="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_2_DESC_B" size="65" />
+				<field name="b_com_mootools_1_12" type="text" default="" label="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_12" description="AIMOOTOOLSCONTROL_COMPONENTS_USING_1_12_DESC_B" size="65" />
+				<field name="b_com_no_mootools" type="text" default="" label="AIMOOTOOLSCONTROL_COMPONENTS_WITHOUT_IT" description="AIMOOTOOLSCONTROL_COMPONENTS_WITHOUT_IT_DESC_B" size="65" />
+				<field name="b_check_buffer" type="radio" default="0" label="AIMOOTOOLSCONTROL_TRIGGER_ON_PLUGIN_CODE" description="AIMOOTOOLSCONTROL_TRIGGER_ON_PLUGIN_CODE_DESC_B">
+					<option value="0">AIMOOTOOLSCONTROL_NO</option>
+					<option value="1">AIMOOTOOLSCONTROL_YES</option>
+				</field>
+				<field name="b_otherwise" type="list" default="0" label="AIMOOTOOLSCONTROL_OTHERWISE" description="AIMOOTOOLSCONTROL_OTHERWISE_DESC_B">
+					<option value="0">AIMOOTOOLSCONTROL_NO_CHANGES_ARE_MADE</option>
+					<option value="1">AIMOOTOOLSCONTROL_NOT_LOAD_MOOTOOLS</option>
+					<option value="2">AIMOOTOOLSCONTROL_LOAD_MOOTOOLS_1_12</option>
+					<option value="3">AIMOOTOOLSCONTROL_LOAD_MOOTOOLS_1_2</option>
+					<option value="4">AIMOOTOOLSCONTROL_LOAD_MOOTOOLS_1_3</option>
+					<option value="5">AIMOOTOOLSCONTROL_LOAD_MOOTOOLS_1_4</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</install>

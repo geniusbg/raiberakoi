@@ -1,0 +1,25 @@
+/**
+ * @copyright	Copyright (C) 2010 Cédric KEIFLIN alias ced1870 & Ghazal
+ * http://www.joomlack.fr
+ * @license		GNU/GPL
+**/
+
+cite.infotip {
+	z-index: 50000;
+}
+
+cite.infotip span.tooltipgc_tooltip {
+	position: absolute;
+	left:-999em;
+	z-index : 60000;
+}
+
+cite.infotip:hover span.tooltipgc_tooltip {
+	left: auto;
+}
+
+cite.infotip span.tooltipgc_inner {
+	display : block;
+}
+
+

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5"
+	type="plugin"
+	group="content"
+	method="upgrade">
+    <name>PLG_TOOLTIPGC_XML_NAME</name>
+    <author>Cédric KEIFLIN et Ghazal</author>
+    <creationDate>Décembre 2010</creationDate>
+    <copyright>Ced1870 et Ghazal</copyright>
+    <license>http://www.gnu.org/licenses/gpl.html</license>
+    <authorEmail></authorEmail>
+    <authorUrl>http://www.joomlack.fr</authorUrl>
+    <version>3.0.2</version>
+    <description>PLG_TOOLTIPGC_XML_DESC</description>
+    <files>
+        <filename plugin="tooltipgc">tooltipgc.php</filename>
+        <filename>index.html</filename>
+        <folder>assets</folder>
+		<folder>language</folder>
+		<folder>elements</folder>
+    </files>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_content_tooltipgc.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_content_tooltipgc.sys.ini</language>
+        <language tag="fr-FR">fr-FR/fr-FR.plg_content_tooltipgc.ini</language>
+        <language tag="fr-FR">fr-FR/fr-FR.plg_content_tooltipgc.sys.ini</language>
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="style" label="PLG_TOOLTIPGC_OPTIONS_STYLES" addfieldpath="/plugins/content/tooltipgc/elements" >
+                <field name="stylewidth" type="cktext" default="150" label="PLG_TOOLTIPGC_TIPLENGTH_LABEL" description="PLG_TOOLTIPGC_TIPLENGTH_DESC" icon="width.png" suffix="px" />
+				<field name="padding" type="cktext" default="5" label="PLG_TOOLTIPGC_PADDING_LABEL" description="PLG_TOOLTIPGC_PADDING_DESC" icon="text_padding_left.png" suffix="px" />
+				<field name="tipoffsetx" type="cktext" default="0" label="PLG_TOOLTIPGC_TIPOFFSETX_LABEL" description="PLG_TOOLTIPGC_TIPOFFSETX_DESC" icon="offsetx.png" suffix="px" />
+				<field name="tipoffsety" type="cktext" default="0" label="PLG_TOOLTIPGC_TIPOFFSETY_LABEL" description="PLG_TOOLTIPGC_TIPOFFSETY_DESC" icon="offsety.png" suffix="px" />
+				<field name="opacity" type="cktext" default="80" label="PLG_TOOLTIPGC_OPACITY_LABEL" description="PLG_TOOLTIPGC_OPACITY_DESC" icon="layers.png" suffix="%" />
+                <field 
+					name="stylesbackgroundckspacer" 
+					type="ckspacer" 
+					label="PLG_TOOLTIPGC_SPACER_STYLESBACKGROUND" 
+					style="title"/>
+				<field name="bgcolor1" type="ckcolor" default="#f0f0f0" label="PLG_TOOLTIPGC_BGCOLOR1_LABEL" description="PLG_TOOLTIPGC_BGCOLOR1_DESC" />
+				<field name="bgcolor2" type="ckcolor" default="#e3e3e3" label="PLG_TOOLTIPGC_BGCOLOR2_LABEL" description="PLG_TOOLTIPGC_BGCOLOR2_DESC" />
+				
+				<field 
+					name="stylesroundedcornersckspacer" 
+					type="ckspacer" 
+					label="PLG_TOOLTIPGC_SPACER_STYLESROUNDEDCORNERS" 
+					style="title"/>
+				<field name="roundedcornerstl" type="cktext" default="5" label="PLG_TOOLTIPGC_ROUNDEDCORNERSTL_LABEL" description="PLG_TOOLTIPGC_ROUNDEDCORNERSTL_DESC" icon="border_radius_tl.png" suffix="px" />
+				<field name="roundedcornerstr" type="cktext" default="5" label="PLG_TOOLTIPGC_ROUNDEDCORNERSTR_LABEL" description="PLG_TOOLTIPGC_ROUNDEDCORNERSTR_DESC" icon="border_radius_tr.png" suffix="px" />
+				<field name="roundedcornersbr" type="cktext" default="5" label="PLG_TOOLTIPGC_ROUNDEDCORNERSBR_LABEL" description="PLG_TOOLTIPGC_ROUNDEDCORNERSBR_DESC" icon="border_radius_br.png" suffix="px" />
+				<field name="roundedcornersbl" type="cktext" default="5" label="PLG_TOOLTIPGC_ROUNDEDCORNERSBL_LABEL" description="PLG_TOOLTIPGC_ROUNDEDCORNERSBL_DESC" icon="border_radius_bl.png" suffix="px" />
+				<field 
+					name="stylesshadowckspacer" 
+					type="ckspacer" 
+					label="PLG_TOOLTIPGC_SPACER_STYLESSHADOW" 
+					style="title"/>
+				<field name="shadowcolor" type="ckcolor" default="#444444" label="PLG_TOOLTIPGC_SHADOWCOLOR_LABEL" description="PLG_TOOLTIPGC_SHADOWCOLOR_DESC" />
+				<field name="shadowblur" type="cktext" default="3" label="PLG_TOOLTIPGC_SHADOWBLUR_LABEL" description="PLG_TOOLTIPGC_SHADOWBLUR_DESC" icon="shadow_blur.png" suffix="px" />
+				<field name="shadowspread" type="cktext" default="0" label="PLG_TOOLTIPGC_SHADOWSPREAD_LABEL" description="PLG_TOOLTIPGC_SHADOWSPREAD_DESC" icon="shadow_spread.png" suffix="px" />
+				<field name="shadowoffsetx" type="cktext" default="0" label="PLG_TOOLTIPGC_OFFSETX_LABEL" description="PLG_TOOLTIPGC_OFFSETX_DESC" icon="offsetx.png" suffix="px" />
+				<field name="shadowoffsety" type="cktext" default="0" label="PLG_TOOLTIPGC_OFFSETY_LABEL" description="PLG_TOOLTIPGC_OFFSETY_DESC" icon="offsety.png" suffix="px" />
+				<field name="shadowinset" type="ckradio" default="0" label="PLG_TOOLTIPGC_SHADOWINSET_LABEL" description="PLG_TOOLTIPGC_SHADOWINSET_DESC" >
+					<option value="0">Non</option>
+                    <option value="1">Oui</option>
+				</field>					
+				<field 
+					name="stylesbordersckspacer" 
+					type="ckspacer" 
+					label="PLG_TOOLTIPGC_SPACER_STYLESBORDERS" 
+					style="title"/>
+				<field name="bordercolor" type="ckcolor" default="#efefef" label="PLG_TOOLTIPGC_BORDERCOLOR_LABEL" description="PLG_TOOLTIPGC_BORDERCOLOR_DESC" />
+				<field name="borderwidth" type="cktext" default="1" label="PLG_TOOLTIPGC_BORDERWIDTH_LABEL" description="PLG_TOOLTIPGC_BORDERWIDTH_DESC" icon="shape_borders.png" suffix="px" />
+            </fieldset>
+			<fieldset name="effects" label="PLG_TOOLTIPGC_OPTIONS_EFFECTS">
+				<field name="activationjs" type="ckradio" default="1" label="PLG_TOOLTIPGC_TIPMOOACTIF_LABEL" description="PLG_TOOLTIPGC_TIPMOOACTIF_DESC">
+                    <option value="0">Non</option>
+                    <option value="1">Oui</option>
+                </field>
+				<field name="dureemootools" type="cktext" default="300" label="PLG_TOOLTIPGC_TIPDURATION_LABEL" description="PLG_TOOLTIPGC_TIPDURATION_DESC" suffix="ms" icon="hourglass.png"/>
+                <field name="dureebulle" type="cktext" default="500" label="PLG_TOOLTIPGC_TIPDURATION2_LABEL" description="PLG_TOOLTIPGC_TIPDURATION2_DESC" suffix="ms" icon="chart_curve.png"/>
+				<field name="mootransition" type="cklist" default="linear" label="PLG_TOOLTIPGC_TRANSITION_LABEL" description="PLG_TOOLTIPGC_TRANSITION_DESC" icon="chart_curve.png">
+                    <option value="linear">Linear</option>
+                    <option value="quad:in">Quad:In</option>
+                    <option value="Quad:Out">Quad:Out</option>
+                    <option value="Quad:In:Out">Quad:In:Out</option>
+                    <option value="Cubic:In">Cubic:In</option>
+                    <option value="Cubic:Out">Cubic:Out</option>
+                    <option value="Cubic:In:Out">Cubic:In:Out</option>
+                    <option value="Quart:In">Quart:In</option>
+                    <option value="Quart:Out">Quart:Out</option>
+                    <option value="Quart:In:Out">Quart:In:Out</option>
+                    <option value="Quint:In">Quint:In</option>
+                    <option value="Quint:Out">Quint:Out</option>
+                    <option value="Quint:In:Out">Quint:In:Out</option>
+                    <option value="Pow:In">Pow:In</option>
+                    <option value="Pow:Out">Pow:Out</option>
+                    <option value="Pow:In:Out">Pow:In:Out</option>
+                    <option value="Expo:In">Expo:In</option>
+                    <option value="Expo:Out">Expo:Out</option>
+                    <option value="Expo:In:Out">Expo:In:Out</option>
+                    <option value="Circ:In">Circ:In</option>
+                    <option value="Circ:Out">Circ:Out</option>
+                    <option value="Circ:In:Out">Circ:In:Out</option>
+                    <option value="Sine:In">Sine:In</option>
+                    <option value="Sine:Out">Sine:Out</option>
+                    <option value="Sine:In:Out">Sine:In:Out</option>
+                    <option value="Back:In">Back:In</option>
+                    <option value="Back:Out">Back:Out</option>
+                    <option value="Back:In:Out">Back:In:Out</option>
+                    <option value="Bounce:In">Bounce:In</option>
+                    <option value="Bounce:Out">Bounce:Out</option>
+                    <option value="Bounce:In:Out">Bounce:In:Out</option>
+                    <option value="Elastic:In">Elastic:In</option>
+                    <option value="Elastic:Out">Elastic:Out</option>
+                    <option value="Elastic:In:Out">Elastic:In:Out</option>
+                    <option value="Pow:Out">Pow:Out</option>
+                    <option value="Pow:In">Pow:In</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+
+</extension>

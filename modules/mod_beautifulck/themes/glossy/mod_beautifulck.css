@@ -1,0 +1,73 @@
+.beautifulck.glossy .beautifulckbg, .beautifulck.glossy {
+	position: relative;
+	z-index: 100;
+}
+
+.beautifulck.glossy .beautifulckbg {
+	height: 0;
+}
+
+.beautifulck.glossy .beautifulckbgcenter {
+	position: absolute;
+	z-index: 102;
+	height: 47px;
+	width: 106px;
+	top: 5px;
+	left: 0px;
+        background-repeat: no-repeat;
+        background-position: left top;
+}
+
+.beautifulck.glossy.pink .beautifulckbgcenter, .beautifulck.glossy.pink .beautifulckbgright {background-image: url(images/glossy_pink.png);}
+.beautifulck.glossy.pink .beautifulckbgcentercolor {background: url(images/glossy_pink_center.png) left top repeat-x; /* rose */}
+
+.beautifulck.glossy.red .beautifulckbgcenter, .beautifulck.glossy.red .beautifulckbgright {background-image: url(images/glossy_red.png);}
+.beautifulck.glossy.red .beautifulckbgcentercolor {background: url(images/glossy_red_center.png) left top repeat-x; /* rouge */}
+
+.beautifulck.glossy.orange .beautifulckbgcenter, .beautifulck.glossy.orange .beautifulckbgright {background-image: url(images/glossy_orange.png);}
+.beautifulck.glossy.orange .beautifulckbgcentercolor {background: url(images/glossy_orange_center.png) left top repeat-x; /* orange */}
+
+.beautifulck.glossy.yellow .beautifulckbgcenter, .beautifulck.glossy.yellow .beautifulckbgright {background-image: url(images/glossy_yellow.png);}
+.beautifulck.glossy.yellow .beautifulckbgcentercolor {background: url(images/glossy_yellow_center.png) left top repeat-x; /* jaune */}
+
+.beautifulck.glossy.green .beautifulckbgcenter, .beautifulck.glossy.green .beautifulckbgright {background-image: url(images/glossy_green.png);}
+.beautifulck.glossy.green .beautifulckbgcentercolor {background: url(images/glossy_green_center.png) left top repeat-x; /* vert */}
+
+.beautifulck.glossy.blue .beautifulckbgcenter, .beautifulck.glossy.blue .beautifulckbgright {background-image: url(images/glossy_blue.png);}
+.beautifulck.glossy.blue .beautifulckbgcentercolor {background: url(images/glossy_blue_center.png) left top repeat-x; /* bleu */}
+
+.beautifulck.glossy.grey .beautifulckbgcenter, .beautifulck.glossy.grey .beautifulckbgright {background-image: url(images/glossy_grey.png);}
+.beautifulck.glossy.grey .beautifulckbgcentercolor {background: url(images/glossy_grey_center.png) left top repeat-x; /* bleu */}
+
+.beautifulck.glossy img.beautifulckbgicon {
+	position: absolute;
+	z-index: 105;
+	top: 17px;
+	left: 15px;
+}
+
+.beautifulck.glossy .beautifulckbgcentercolor {
+	position: relative;
+	z-index: 101;
+	height: 47px;
+	top: 5px;
+	left: 0px;
+	margin: 0 0 0 106px;
+}
+
+.beautifulck.glossy .beautifulckbgright {
+	position: absolute;
+	z-index: 102;
+	height: 47px;
+	width: 57px;
+	top: 5px;
+	right: -57px;
+        background-repeat: no-repeat;
+        background-position: right top;
+}
+
+.beautifulck.glossy h3 {
+	position: absolute;
+	z-index: 103;
+	border: none !important;
+}

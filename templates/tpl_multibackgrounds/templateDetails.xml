@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.0" type="template" client="site" method="upgrade">
+	<name>tpl_multibackgrounds</name>
+	<creationDate></creationDate>
+	<author>Cedric KEIFLIN</author>
+	<authorEmail></authorEmail>
+	<authorUrl></authorUrl>
+	<copyright>Cedric KEIFLIN</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.0</version>
+	<description>Template multibackgrounds for Template Creator CK</description>
+
+	<files>
+		<filename>css/default.css</filename>
+		<filename>css/default_rtl.css</filename>
+		<filename>css/fonts/fonts.css</filename>
+		<filename>css/fonts/index.html</filename>
+		<filename>css/index.html</filename>
+		<filename>css/mobile.css</filename>
+		<filename>css/template.css</filename>
+		<filename>css/template_rtl.css</filename>
+		<filename>images/index.html</filename>
+		<filename>images/logo_fake.png</filename>
+		<filename>images/system/edit.png</filename>
+		<filename>images/system/emailButton.png</filename>
+		<filename>images/system/index.html</filename>
+		<filename>images/system/printButton.png</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+	</files>
+	<positions>
+		<position>position-1</position>
+		<position>position-0</position>
+		<position>topnews</position>
+		<position>midnews</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>bottomnews</position>
+		<position>position-7</position>
+		<position>position-3</position>
+	</positions>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="logolink" type="text" default="" label="Logo link" description="If you want to redirect the page on the logo click" />
+				<field name="logotitle" type="text" default="" label="Logo title" description="Choose the alt tag that will be added to the image" />
+				<field name="logodescription" type="text" default="" label="Logo description" description="Text that will be added under the logo" />
+				<field name="usecsspie" type="radio" default="1" label="Use CSS PIE" description="Launch a script to emulate the CSS3 styles for Internet Explorer" >
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				<field name="useresponsive" type="radio" default="1" label="Use Responsive mode" description="Adapt your template design for mobile resolutions" >
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				<field name="usebootstrap" type="radio" default="0" label="Load Bootstrap" description="Add the Bootstrap framework into the template" >
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

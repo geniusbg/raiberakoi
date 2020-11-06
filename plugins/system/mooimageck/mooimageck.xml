@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5"
+	type="plugin"
+	group="system"
+	method="upgrade">
+    <name>PLG_MOOIMAGECK_XML_NAME</name>
+    <author>Cédric KEIFLIN</author>
+    <creationDate>2012</creationDate>
+    <copyright>Cédric KEIFLIN</copyright>
+    <license>GNU/GPL 3 http://www.gnu.org/licenses/gpl.html</license>
+    <authorEmail>ced1870@gmail.com</authorEmail>
+    <authorUrl>http://www.joomlack.fr</authorUrl>
+    <version>2.0.1</version>
+    <description>PLG_MOOIMAGECK_XML_DESC</description>
+    <files>
+        <filename plugin="mooimageck">mooimageck.php</filename>
+		<folder>language</folder>
+		<folder>mooimageck</folder>
+		<folder>elements</folder>
+    </files>
+	<languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_system_mooimageck.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_system_mooimageck.sys.ini</language>
+        <language tag="fr-FR">fr-FR/fr-FR.plg_system_mooimageck.ini</language>
+        <language tag="fr-FR">fr-FR/fr-FR.plg_system_mooimageck.sys.ini</language>
+    </languages>
+     <config>
+        <fields name="params">
+            <fieldset name="basic" addfieldpath="/plugins/system/mooimageck/elements">
+				<field 
+					name="moopuffyspacer" 
+					type="ckspacer" 
+					label="PLG_MOOIMAGECK_SPACER_MOOPUFFY" 
+					style="title"
+				/>
+				<field name="usemoopuffy" type="radio" default="1" label="PLG_MOOIMAGECK_USE_MOOPUFFY" description="PLG_MOOIMAGECK_USE_MOOPUFFY_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="classmoopuffy" type="text" default="moopuffy" label="PLG_MOOIMAGECK_CLASS_MOOPUFFY" description="PLG_MOOIMAGECK_CLASS_MOOPUFFY_DESC" />
+				<field name="dureemoopuffy" type="text" default="500" label="PLG_MOOIMAGECK_DUREE_MOOPUFFY" description="PLG_MOOIMAGECK_DUREE_MOOPUFFY_DESC" />
+				<field name="ratiomoopuffy" type="text" default="1.3" label="PLG_MOOIMAGECK_RATIO_MOOPUFFY" description="PLG_MOOIMAGECK_RATIO_MOOPUFFY_DESC" />
+				
+				<field 
+					name="mooopacitespacer" 
+					type="ckspacer" 
+					label="PLG_MOOIMAGECK_SPACER_MOOOPACITE" 
+					style="title"
+				/>
+				<field name="usemooopacite" type="radio" default="1" label="PLG_MOOIMAGECK_USE_MOOOPACITE" description="PLG_MOOIMAGECK_USE_MOOOPACITE_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="classmooopacite" type="text" default="mooopacite" label="PLG_MOOIMAGECK_CLASS_MOOOPACITE" description="PLG_MOOIMAGECK_CLASS_MOOOPACITE_DESC" />
+				<field name="opacitemooopacite" type="text" default="0.5" label="PLG_MOOIMAGECK_OPACITE_MOOOPACITE" description="PLG_MOOIMAGECK_OPACITE_MOOOPACITE_DESC" />
+				<field name="dureemooopacite1" type="text" default="100" label="PLG_MOOIMAGECK_DUREE_MOOOPACITE1" description="PLG_MOOIMAGECK_DUREE_MOOOPACITE1_DESC" />
+				<field name="dureemooopacite2" type="text" default="500" label="PLG_MOOIMAGECK_DUREE_MOOOPACITE2" description="PLG_MOOIMAGECK_DUREE_MOOOPACITE2_DESC" />
+				<field 
+					name="mooshakespacer" 
+					type="ckspacer" 
+					label="PLG_MOOIMAGECK_SPACER_MOOSHAKE" 
+					style="title"
+				/>
+				<field name="usemooshake" type="radio" default="1" label="PLG_MOOIMAGECK_USE_MOOSHAKE" description="PLG_MOOIMAGECK_USE_MOOSHAKE_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="classmooshake" type="text" default="mooshake" label="PLG_MOOIMAGECK_CLASS_MOOSHAKE" description="PLG_MOOIMAGECK_CLASS_MOOSHAKE_DESC" />
+				<field name="dureemooshake" type="text" default="100" label="PLG_MOOIMAGECK_DUREE_MOOSHAKE" description="PLG_MOOIMAGECK_DUREE_MOOSHAKE_DESC" />
+				<field 
+					name="mooreflectspacer" 
+					type="ckspacer" 
+					label="PLG_MOOIMAGECK_SPACER_MOOREFLECT" 
+					style="title"
+				/>
+				<field name="usemooreflect" type="radio" default="1" label="PLG_MOOIMAGECK_USE_MOOREFLECT" description="PLG_MOOIMAGECK_USE_MOOREFLECT_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+        </fields>
+    </config>
+
+</extension>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="template" client="site" method="upgrade">
+	<name>templatecreatorck</name>
+	<creationDate>Septembre 2011</creationDate>
+	<author>Cédric KEIFLIN</author>
+	<authorEmail>ced1870@gmail.com</authorEmail>
+	<authorUrl>http://www.template-creator.com</authorUrl>
+	<copyright>Copyright (C) 2011 Cédric KEIFLIN</copyright>
+	<license>GNU General Public License version 2 ou supérieure</license>
+	<version>1.0.0</version>
+	<description>Empty template for Template Creator</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>index.html</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+</extension>

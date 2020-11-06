@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+    type="module"
+    version="2.5"
+    method="upgrade">
+<name>MooCoverflow CK</name>
+<author>Cédric KEIFLIN</author>
+<creationDate>mars 2011</creationDate>
+<copyright>Cédric KEIFLIN</copyright>
+<license>GNU/GPL 3 http://www.gnu.org/licenses/gpl.html</license>
+<authorEmail>ced1870@gmail.com</authorEmail>
+<authorUrl>http://www.joomlack.fr</authorUrl>
+<version>1.2.0</version>
+<description>MOD_MOOCOVERFLOWCK_DESC</description>
+<files>
+        <filename module="mod_moocoverflowck">mod_moocoverflowck.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+        <folder>assets</folder>
+		<folder>language</folder>
+</files>
+
+<languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.mod_moocoverflowck.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_moocoverflowck.sys.ini</language>
+        <language tag="fr-FR">fr-FR/fr-FR.mod_moocoverflowck.ini</language>
+        <language tag="fr-FR">fr-FR/fr-FR.mod_moocoverflowck.sys.ini</language>
+</languages>
+
+<config>
+    <fields name="params">
+        <fieldset name="basic">
+            <field
+                name="menutype"
+                type="menu"
+                default="mainmenu"
+                label="MOD_MOOCOVERFLOWCK_MENU_LABEL"
+                description="MOD_MOOCOVERFLOWCK_MENU_DESC" />
+            <field
+                name="width"
+                type="text"
+                default="400"
+                label="MOD_MOOCOVERFLOWCK_WIDTH_LABEL"
+                description="MOD_MOOCOVERFLOWCK_WIDTH_DESC" />
+            <field
+                name="reflection"
+                type="text"
+                default="0.4"
+                label="MOD_MOOCOVERFLOWCK_REFLECTION_LABEL"
+                description="MOD_MOOCOVERFLOWCK_REFLECTION_DESC" />
+            <field
+                name="heightratio"
+                type="text"
+                default="0.6"
+                label="MOD_MOOCOVERFLOWCK_HEIGHTRATIO_LABEL"
+                description="MOD_MOOCOVERFLOWCK_HEIGHTRATIO_DESC" />
+            <field
+                name="offsety"
+                type="text"
+                default="0"
+                label="MOD_MOOCOVERFLOWCK_OFFSETY_LABEL"
+                description="MOD_MOOCOVERFLOWCK_OFFSETY_DESC" />
+            <field
+                name="startindex"
+                type="text"
+                default="0"
+                label="MOD_MOOCOVERFLOWCK_STARTINDEX_LABEL"
+                description="MOD_MOOCOVERFLOWCK_STARTINDEX_DESC" />
+            <field
+                name="interval"
+                type="text"
+                default="3000"
+                label="MOD_MOOCOVERFLOWCK_INTERVAL_LABEL"
+                description="MOD_MOOCOVERFLOWCK_INTERVAL_DESC" />
+            <field
+                name="factor"
+                type="text"
+                default="115"
+                label="MOD_MOOCOVERFLOWCK_FACTOR_LABEL"
+                description="MOD_MOOCOVERFLOWCK_FACTOR_DESC" />
+            <field
+                name="bgcolor"
+                type="text"
+                default="#000"
+                label="MOD_MOOCOVERFLOWCK_BGCOLOR_LABEL"
+                description="MOD_MOOCOVERFLOWCK_BGCOLOR_DESC" />
+            <field
+                name="usecaption"
+                type="radio"
+                default="true"
+                label="MOD_MOOCOVERFLOWCK_USECAPTION_LABEL"
+                description="MOD_MOOCOVERFLOWCK_USECAPTION_DESC">
+                <option
+                    value="true">JYES</option>
+                <option
+                    value="false">JNO</option>
+            </field>
+            <field
+                name="useresize"
+                type="radio"
+                default="true"
+                label="MOD_MOOCOVERFLOWCK_USERESIZE_LABEL"
+                description="MOD_MOOCOVERFLOWCK_USERESIZE_DESC">
+                <option
+                    value="true">JYES</option>
+                <option
+                    value="false">JNO</option>
+            </field>
+            <field
+                name="useslider"
+                type="radio"
+                default="true"
+                label="MOD_MOOCOVERFLOWCK_USESLIDER_LABEL"
+                description="MOD_MOOCOVERFLOWCK_USESLIDER_DESC">
+                <option
+                    value="true">JYES</option>
+                <option
+                    value="false">JNO</option>
+            </field>
+            <field
+                name="usewindowresize"
+                type="radio"
+                default="true"
+                label="MOD_MOOCOVERFLOWCK_USEWINDOWRESIZE_LABEL"
+                description="MOD_MOOCOVERFLOWCK_USEWINDOWRESIZE_DESC">
+                <option
+                    value="true">JYES</option>
+                <option
+                    value="false">JNO</option>
+            </field>
+            <field
+                name="usemousewheel"
+                type="radio"
+                default="true"
+                label="MOD_MOOCOVERFLOWCK_USEMOUSEWHEEL_LABEL"
+                description="MOD_MOOCOVERFLOWCK_USEMOUSEWHEEL_DESC">
+                <option
+                    value="true">JYES</option>
+                <option
+                    value="false">JNO</option>
+            </field>
+            <field
+                name="usekeyinput"
+                type="radio"
+                default="true"
+                label="MOD_MOOCOVERFLOWCK_USEKEYINPUT_LABEL"
+                description="MOD_MOOCOVERFLOWCK_USEKEYINPUT_DESC">
+                <option
+                    value="true">JYES</option>
+                <option
+                    value="false">JNO</option>
+            </field>
+            <field
+                name="useautoplay"
+                type="radio"
+                default="true"
+                label="MOD_MOOCOVERFLOWCK_USEAUTOPLAY_LABEL"
+                description="MOD_MOOCOVERFLOWCK_USEAUTOPLAY_DESC">
+                <option
+                    value="true">JYES</option>
+                <option
+                    value="false">JNO</option>
+            </field>
+            <field
+                name="usemediabox"
+                type="radio"
+                default="0"
+                label="MOD_MOOCOVERFLOWCK_USEMEDIABOX_LABEL"
+                description="MOD_MOOCOVERFLOWCK_USEMEDIABOX_DESC">
+                <option
+                    value="1">JYES</option>
+                <option
+                    value="0">JNO</option>
+            </field>
+        </fieldset>
+    </fields>
+</config>
+
+</extension>

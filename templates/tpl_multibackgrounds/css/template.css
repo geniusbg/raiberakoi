@@ -1,0 +1,524 @@
+/* ---------------------------------------
+	Standard styles formatting
+	created with Template Creator
+        on http://www.template-creator.com
+-----------------------------------------*/
+
+
+html {
+  height: 101%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, .contentheading, .componentheading {
+  padding: 3px 0;
+  margin: 0;
+  line-height: 1.2;
+  font-weight: bold;
+  font-style: normal;
+}
+h1, .componentheading {
+  font-size: 1.75em;
+}
+h2, .contentheading {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.25em;
+}
+h4 {
+  font-size: 1em;
+}
+
+ul, ol {
+  padding: .75em 0 .75em 0;
+  margin: 0 0 0 35px;
+}
+
+ul.menu {
+    margin: 0;
+}
+
+ul.menu li {
+    list-style: none;
+}
+
+p {
+  padding: 5px 0;
+}
+
+address {
+  margin: .75em 0;
+  font-style: normal;
+}
+
+a:focus {
+    outline: none;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+}
+
+em {
+  font-style: italic;
+}
+strong {
+  font-weight: bold;
+}
+
+form, fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+input, button, select {
+  vertical-align: middle;
+}
+
+.clr {
+	clear : both;
+}
+
+.column.column1 {
+    width: 25%;
+}
+
+.column.column2 {
+    width: 0%;
+}
+
+.column.main {
+    width: 75%;
+}
+
+.column.center {
+    width: 100%;
+}
+
+.column.noleft.main {
+    width: 100%;
+}
+
+.column.noright .column.center {
+    width: 100%;
+}
+
+.flexiblemodule, .column, .logobloc {
+        float: left;
+}
+
+/* ---------------------------------------
+	specific to images
+-----------------------------------------*/
+
+li.print-icon {
+        height: 16px;
+        line-height: 16px;
+        padding-left: 20px;
+        background: url(../images/system/printButton.png) left center no-repeat;
+    }li.email-icon {
+        height: 16px;
+        line-height: 16px;
+        padding-left: 20px;
+        background: url(../images/system/emailButton.png) left center no-repeat;
+    }li.edit-icon {
+        height: 16px;
+        line-height: 16px;
+        padding-left: 20px;
+        background: url(../images/system/edit.png) left center no-repeat;
+    }
+
+    /* ---------------------------------------
+	Custom styling
+-----------------------------------------*/
+
+.container, .container-fluid {
+	margin: 0 auto;
+}
+
+.container {
+	width: 1000px;
+}
+
+.container-fluid {
+	max-width: 1000px;
+}
+
+body {
+	color: #363636;
+	text-align: left;
+	line-height: 20px;
+	font-size: 12px;
+	font-family: Segoe UI, sans-serif;
+}
+
+a {
+	color: #ff4a52;
+}
+
+
+a:hover {
+	color: #000000;
+}
+
+h1, div.componentheading {
+	font-size: 22px;
+}
+
+h2, div.contentheading {
+	color: #ff4a52;
+	text-align: left;
+	font-size: 18px;
+}
+
+h2 a, div.contentheading a {
+	color: #ff4a52;
+}
+
+
+h2 a:hover, div.contentheading a:hover {
+	color: #000000;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+.button, button, input.btn {
+    border: none;
+	background: #ff4a52;
+	border: #a82b1d 1px solid;
+	color: #ffffff;
+	padding: 5px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.button:hover, button:hover, input.btn:hover {
+	background: #a82b1d;
+}
+
+.invalid {border: red;}
+                
+input.inputbox, .registration input, .login input, .contact input, .contact textarea,
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    border: none;
+	border: #bebebe 1px solid;
+	color: #bebebe;
+	padding: 4px;
+	text-align: left;
+}
+
+input:focus, input.inputbox:focus, .registration input:focus, .login input:focus, .contact input:focus, .contact textarea:focus,
+textarea, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus {
+	border: #000000 1px solid;
+}
+
+#topwrapper {
+    min-height: 100%;
+	background: #000000;
+
+                    }
+
+#topwrapper > div.inner {
+	color: #747474;
+	padding-top: 1px;
+	padding-bottom: 25px;
+	font-size: 16px;
+}
+
+#topwrapper a {
+	color: #7a7a7a;
+}
+
+
+#topwrapper a:hover {
+	color: #ebebeb;
+}
+#menu ul.menu {
+            margin: 0;
+            padding: 0;
+}
+
+#menu ul.menu li {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style:none;
+        white-space: nowrap;
+}
+
+#menu ul.menu > li > a, #menu ul.menu > li > span.separator {
+    display:block;
+	color: #747474;
+	margin: 2px;
+	margin-right: 10px;
+	padding: 5px;
+	text-align: center;
+	font-size: 12px;
+}
+
+#menu ul.menu > li:hover > a {
+	color: #ffffff;
+}
+
+#menu ul.menu > li.active > a {
+}
+
+#menu ul.menu li li a, #menu ul.menu li li span.separator {
+    display:block;
+	color: #969696;
+	margin: 2px;
+	padding: 5px;
+	text-align: left;
+	font-size: 12px;
+}
+
+#menu ul.menu li li:hover > a {
+	color: #ffffff;
+}
+
+#menu ul.menu li li.active > a {
+}
+
+/* code pour menu normal */
+#menu ul.menu li ul, #menu ul.menu li:hover ul ul, #menu ul.menu li:hover ul ul ul {
+	position: absolute;
+	left: -999em;
+	z-index: 999;
+        margin: 0;
+        padding: 0;
+	background: #3d3d3d;
+	width: 200px;
+}
+
+
+#menu ul.menu li:hover ul ul, #menu ul.menu li:hover li:hover ul ul, #menu ul.menu li:hover li:hover li:hover ul ul,
+#menu ul.menu li.sfhover ul ul, #menu ul.menu li.sfhover ul.sfhover ul ul, #menu ul.menu li.sfhover ul.sfhover ul.sfhover ul ul {
+	left: -999em;
+}
+
+#menu ul.menu li:hover > ul, #menu ul.menu li:hover ul li:hover > ul, #menu ul.menu li:hover ul li:hover ul li:hover > ul, #menu ul.menu li:hover ul li:hover ul li:hover ul li:hover > ul,
+#menu ul.menu li.sfhover ul, #menu ul.menu li.sfhover ul li.sfhover ul, #menu ul.menu li.sfhover ul li.sfhover ul li.sfhover ul, #menu ul.menu li.sfhover ul li.sfhover ul li.sfhover ul li.sfhover ul {
+	left: auto;
+}
+
+#menu ul.menu li:hover ul li:hover ul {
+	margin-top: -30px;
+	margin-left: 190px;
+}
+
+/* fin code normal */
+
+#menu ul.menu.maximenuCK li ul, #menu ul.menu.maximenuCK li:hover ul ul, #menu ul.menu.maximenuCK li:hover ul ul ul,
+#menu ul.menu.maximenuck li ul, #menu ul.menu.maximenuck li:hover ul ul, #menu ul.menu.maximenuck li:hover ul ul ul {
+	position: static !important;
+	left: auto !important;
+	background: transparent !important;
+	border-radius: 0 !important;
+    border: none !important;
+	-moz-border-radius: 0 !important;
+	-o-border-radius:  0 !important;
+	-webkit-border-radius: 0 !important;
+	width: 100% !important;
+	box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+}
+
+#menu ul.menu.maximenuCK li ul ul,
+#menu ul.menu.maximenuck li ul ul {
+	margin: 0 !important;
+}
+
+#menu li div.floatCK,
+#menu li div.floatck {
+	background: #3d3d3d;
+	width: 200px;
+}
+
+#menu ul.menu li ul.maximenuCK2,
+#menu ul.menu li ul.maximenuck2 {
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul.menu li div.maximenuCK2,
+#menu ul.menu li div.maximenuck2 {
+    float: left;
+    width: 100%;
+}
+
+#menu ul li.maximenuCK div.floatCK div.floatCK,
+#menu ul li.maximenuck div.floatck div.floatck {
+	margin-top: -30px;
+	margin-left: 190px;
+}
+
+#menu span.descCK,
+#menu span.descck {
+    display: block;
+    line-height: 10px;
+}
+
+#menu ul.menu li li {
+    float: none;
+    display: block;
+}
+
+
+#topbannerlogo > div.inner > .bannerlogodesc {
+	color: #a3a3a3;
+	text-align: center;
+	font-size: 13px;
+	font-family: Arial, sans-serif;
+}
+
+#topbannerlogo > div.inner {
+	margin-top: 10px;
+	margin-right: 150px;
+	margin-left: 10px;
+}
+
+#topbannermodule {
+	width: 450px;
+}
+
+#topbannermodule div.moduletable h3, #topbannermodule div.module h3,
+#topbannermodule div.moduletable_menu h3, #topbannermodule div.module_menu h3 {
+	color: #ffffff;
+	font-size: 25px;
+}
+
+#topnews > div.inner {
+	margin-top: 30px;
+}
+
+#topnews div.moduletable h3, #topnews div.module h3,
+#topnews div.moduletable_menu h3, #topnews div.module_menu h3 {
+	color: #ffffff;
+	text-align: left;
+	font-size: 25px;
+}
+
+#midwrapper {
+    min-height: 100%;
+	background: #ff4a52;
+
+                    }
+
+#midwrapper > div.inner {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+#midwrapper a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+
+#midwrapper a:hover {
+	color: #000000;
+}
+#midnews .n1 > .flexiblemodule { width: 100%; }
+#midnews .n2 > .flexiblemodule { width: 50%; }
+#midnews .n2 > .flexiblemodule + div { width: 50%; }
+#midnews .n3 > .flexiblemodule { width: 40%; }
+#midnews .n3 > .flexiblemodule + div { width: 30%; }
+#midnews .n3 > .flexiblemodule + div + div { width: 30%; }
+
+#midnews > div.inner {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#midnewsmod1 > div.inner {
+	color: #ffffff;
+}
+
+#midnewsmod1 div.moduletable h3, #midnewsmod1 div.module h3,
+#midnewsmod1 div.moduletable_menu h3, #midnewsmod1 div.module_menu h3 {
+	color: #ffffff;
+	text-align: left;
+	font-size: 30px;
+}
+
+#midnewsmod2 > div.inner {
+	color: #000000;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#midnewsmod2 div.moduletable h3, #midnewsmod2 div.module h3,
+#midnewsmod2 div.moduletable_menu h3, #midnewsmod2 div.module_menu h3 {
+	color: #ffffff;
+	font-size: 16px;
+}
+
+#midnewsmod3 > div.inner {
+	color: #000000;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#midnewsmod3 div.moduletable h3, #midnewsmod3 div.module h3,
+#midnewsmod3 div.moduletable_menu h3, #midnewsmod3 div.module_menu h3 {
+	color: #ffffff;
+	font-size: 16px;
+}
+
+#wrapper > div.inner {
+	padding-top: 1px;
+}
+
+#bottomnews > div.inner {
+	color: #aaaaaa;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-align: center;
+	font-size: 15px;
+}
+
+#bottomnews div.moduletable h3, #bottomnews div.module h3,
+#bottomnews div.moduletable_menu h3, #bottomnews div.module_menu h3 {
+	color: #000000;
+	text-align: center;
+	font-size: 22px;
+}
+
+#maincontent > div.inner {
+	margin-top: 10px;
+}
+
+#center > div.inner {
+	padding: 10px;
+}
+
+#left > div.inner {
+	margin-right: 10px;
+	padding: 10px;
+}
+
+#left div.moduletable, #left div.module,
+#left div.moduletable_menu, #left div.module_menu {
+	margin-bottom: 15px;
+}
+
+#footer > div.inner {
+	color: #aaaaaa;
+	padding: 10px;
+	text-align: left;
+}

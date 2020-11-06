@@ -1,0 +1,65 @@
+/**
+ * @copyright	Copyright (C) 2011 Cédric KEIFLIN alias ced1870
+ * http://www.template-creator.com
+ * Component Template Creator CK
+ * @license		GNU/GPL
+ * */
+
+.icon-48-home_templateck    {
+    background-image: url(../images/logo_templateck_48.png);
+}
+
+.icon-32-installGabarit,.icon-32-installTheme   {
+    background-image: url(../images/icon-32-download.png);
+}
+
+.icon-32-exportGabarit    {
+    background-image: url(../images/icon-32-export.png);
+}
+
+body div.pagetitle {
+    padding-left: 225px;
+}
+
+
+/* -- TOOLTIP STYLES ----------------------------- */
+body .tip {
+    float: left;
+    background: #fff;
+    color: #1a1a1a;
+    border: none;
+    -moz-box-shadow: 0 0 5px #888;
+    -webkit-box-shadow: 0 0 5px#888;
+    box-shadow: 0 0 5px #888;
+    -moz-border-radius: 0.5em;
+    border-radius: 0.5em;
+    padding: 5px;
+    max-width: 400px;
+    z-index: 50;
+    opacity : 0.9;
+    -moz-opacity : 0.9;
+    -ms-filter: "alpha(opacity=90)"; /* IE 8 */
+    filter : alpha(opacity=90); /* IE < 8 */
+}
+
+body .tip-title {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: -15px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    background: none;
+}
+
+body .tip-text {
+    font-size: 1em;
+    margin: 0;
+    color: #efefef;
+}
+
+
+
+
+

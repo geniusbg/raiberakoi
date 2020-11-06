@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>PLG_MULTILANGUAGESCK_XML_NAME</name>
+    <author>Cédric KEIFLIN</author>
+    <creationDate>mars 2012</creationDate>
+    <copyright>Cédric KEIFLIN</copyright>
+    <license>GNU/GPL 3 http://www.gnu.org/licenses/gpl.html</license>
+    <authorEmail>ced1870@gmail.com</authorEmail>
+    <authorUrl>http://www.joomlack.fr</authorUrl>
+    <version>1.0.0</version>
+	<description>PLG_MULTILANGUAGESCK_XML_DESC</description>
+
+	<files>
+		<filename plugin="multilanguagesck">multilanguagesck.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+	</files>
+	
+	<languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_system_multilanguagesck.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_system_multilanguagesck.sys.ini</language>
+        <language tag="fr-FR">fr-FR/fr-FR.plg_system_multilanguagesck.ini</language>
+        <language tag="fr-FR">fr-FR/fr-FR.plg_system_multilanguagesck.sys.ini</language>
+    </languages>
+	
+	<config>
+        <fields name="params">
+            <fieldset name="basic">
+				<field
+					name="debugmode" 
+					type="radio" 
+					default="0" 
+					label="PLG_MULTILANGUAGESCK_DEBUG_LABEL" 
+					description="PLG_MULTILANGUAGESCK_DEBUG_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+			</fieldset>
+        </fields>
+    </config>
+
+</extension>

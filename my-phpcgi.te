@@ -1,0 +1,14 @@
+
+module my-phpcgi 1.0;
+
+require {
+	type hugetlbfs_t;
+	type httpd_sys_script_t;
+	class file { execute map read write };
+}
+
+#============= httpd_sys_script_t ==============
+
+#!!!! This avc can be allowed using the boolean 'domain_can_mmap_files'
+allow httpd_sys_script_t hugetlbfs_t:file map;
+allow httpd_sys_script_t hugetlbfs_t:file { execute read write };
