@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:latest
 RUN sed -i 's/archive.ubuntu.com/tw.archive.ubuntu.com/g' \
     /etc/apt/sources.list
 RUN apt-get update 
