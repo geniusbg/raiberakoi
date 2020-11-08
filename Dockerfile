@@ -1,6 +1,6 @@
 FROM ubuntu:latest
-RUN sed -i 's/archive.ubuntu.com/tw.archive.ubuntu.com/g' \
-    /etc/apt/sources.list
+#RUN sed -i 's/archive.ubuntu.com/tw.archive.ubuntu.com/g' \
+#    /etc/apt/sources.list
 RUN apt-get update 
 RUN apt-get -y install wget net-tools
 RUN wget https://downloads.sourceforge.net/project/xampp/XAMPP%20Linux/5.5.35/xampp-linux-x64-5.5.35-0-installer.run?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fxampp%2Ffiles%2FXAMPP%2520Linux%2F5.5.35%2Fxampp-linux-x64-5.5.35-0-installer.run%2Fdownload&ts=1604832330
