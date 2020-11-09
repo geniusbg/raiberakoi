@@ -1,0 +1,74 @@
+
+<?php
+class JConfig {
+	public $offline = '0';
+	public $offline_message = 'www.raiberakoi.com e временно ограничен за посещения.
+<br /> Извършва се обновяване на софтуера.
+ <br /> Моля опитайте по-късно.';
+	public $sitename = 'Японски шаран KOI';
+	public $editor = 'jckeditor';
+	public $list_limit = '100';
+	public $access = '1';
+	public $debug = '0';
+	public $debug_lang = '0';
+	public $dbtype = 'mysqli';
+	public $host = '192.168.1.200:3306';
+	public $user = 'wordpress';
+	public $password = 'keisi';
+	public $db = 'raiberakoi';
+	public $dbprefix = 'w8uyx_';
+	public $live_site = '';
+	public $secret = '0fVvcj6memcmtCdtKbA5238E3wnlGG3Q';
+	public $gzip = '1';
+	public $error_reporting = 'default';
+	public $helpurl = 'http://help.joomla.org/proxy/index.php?option=com_help&keyref=Help{major}{minor}:{keyref}';
+	public $ftp_host = '127.0.0.1';
+	public $ftp_port = '21';
+	public $ftp_user = 'admin';
+	public $ftp_pass = 'qwer9001';
+	public $ftp_root = '';
+	public $ftp_enable = '0';
+	public $offset = 'Europe/Sofia';
+	public $offset_user = 'UTC';
+	public $mailer = 'mail';
+	public $mailfrom = 'geniuss0ft@yahoo.com';
+	public $fromname = 'Райбера - езерни рибки КОИ';
+	public $sendmail = '/usr/sbin/sendmail';
+	public $smtpauth = '0';
+	public $smtpuser = '';
+	public $smtppass = '';
+	public $smtphost = 'localhost';
+	public $smtpsecure = 'none';
+	public $smtpport = '25';
+	public $caching = '0';
+	public $cache_handler = 'file';
+	public $cachetime = '60';
+	public $MetaDesc = 'Езерни рибки - Японски шарани KOI - Райбера';
+	public $MetaKeys = 'японски, шаран, кои, езерни, рибки, риби, iaponski, qponski, sharan, koi, ezerni, ribi, ribki, sharani';
+	public $MetaTitle = '1';
+	public $MetaAuthor = '0';
+	public $sef = '1';
+	public $sef_rewrite = '1';
+	public $sef_suffix = '0';
+	public $unicodeslugs = '0';
+	public $feed_limit = '10';
+	public $log_path = '/var/www/html/raiberakoi/log';
+	public $tmp_path = '/var/www/html/raiberakoi/tmp';
+	public $lifetime = '20';
+	public $session_handler = 'database';
+	public $MetaRights = '';
+	public $sitename_pagetitles = '0';
+	public $force_ssl = '0';
+	public $feed_email = 'author';
+	public $cookie_domain = '';
+	public $cookie_path = '';
+	public $memcache_persist = '1';
+	public $memcache_compress = '1';
+	public $memcache_server_host = 'localhost';
+	public $memcache_server_port = '11211';
+	public $display_offline_message = '1';
+	public $robots = '';
+	public $offline_image = '';
+	public $captcha = '0';
+	public $MetaVersion = '0';
+}

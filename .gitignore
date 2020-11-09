@@ -39,7 +39,7 @@ y_key_*.html
 
 # Joomla stuff #
 ################
-/configuration.php
+#/configuration.php
 README.txt
 LICENSE.txt
 htaccess.txt
@@ -51,11 +51,11 @@ htaccess.txt
 
 # Media Files #
 ###############
-/images/*
-/files/*
+#/images/*
+#/files/*
 !/images/thumbs/image.php
-/components/com_rsform/uploads/*
+#/components/com_rsform/uploads/*
 
 # Site Specific Stuff #
 #######################
-/custom-folder/*
+#/custom-folder/*
