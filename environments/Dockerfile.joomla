@@ -34,7 +34,7 @@ RUN set -ex; \
         ; 
 
 RUN a2enmod rewrite
-COPY . /var/www/html/
+#COPY . /var/www/html/
 # SSH server
 RUN apt-get install -y -q supervisor openssh-server
 RUN mkdir -p /var/run/sshd

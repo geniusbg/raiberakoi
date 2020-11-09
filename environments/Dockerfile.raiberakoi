@@ -1,0 +1,2 @@
+FROM geniusbg/joomla25env
+COPY . /var/www/html/
