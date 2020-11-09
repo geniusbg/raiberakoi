@@ -1,18 +1,65 @@
-FROM ubuntu:latest
-echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf > /dev/null
-RUN sed -i 's/archive.ubuntu.com/tw.archive.ubuntu.com/g' \
-    /etc/apt/sources.list
-RUN apt-get update 
-RUN apt-get -y install wget net-tools
-RUN wget https://downloads.sourceforge.net/project/xampp/XAMPP%20Linux/5.5.35/xampp-linux-x64-5.5.35-0-installer.run?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fxampp%2Ffiles%2FXAMPP%2520Linux%2F5.5.35%2Fxampp-linux-x64-5.5.35-0-installer.run%2Fdownload&ts=1604832330
-RUN chmod +x xampp-linux-x64-5.5.35-0-installer.run
-RUN ./xampp-linux-x64-5.5.35-0-installer.run
-RUN rm xampp-linux-x64-5.5.35-0-installer.run
-RUN mv /opt/lampp/etc/extra/httpd-xampp.conf /opt/lampp/etc/extra/httpd-xampp.conf.bak
-RUN echo "export PATH=\$PATH:/opt/lampp/bin/" >> /root/.bashrc
-RUN echo "export TERM=dumb" >> /root/.bashrc
-ADD httpd-xampp.conf /opt/lampp/etc/extra/httpd-xampp.conf
-VOLUME  ["/opt/lampp/htdocs/"]
-EXPOSE 80 443 3306
-CMD /opt/lampp/lampp start && tail -F /opt/lampp/logs/error_log
-COPY ./raiberakoi /opt/lampp/htdocs/
+FROM php:5.6-apache
+# Install PHP extensions
+RUN set -ex; \
+        \
+        savedAptMark="$(apt-mark showmanual)"; \
+        \
+        apt-get update; \
+        apt-get install -y --no-install-recommends \
+                libbz2-dev \
+                libgmp-dev \
+                libjpeg-dev \
+                    libldap2-dev \
+                libmcrypt-dev \
+                libmemcached-dev \
+                libpng-dev \
+                libpq-dev \
+                libzip-dev \
+        ; \
+        ln -s /usr/include/x86_64-linux-gnu/gmp.h /usr/include/gmp.h; \
+        \
+        docker-php-ext-configure gd --with-jpeg; \
+        debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; \
+        docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; \
+        docker-php-ext-install -j "$(nproc)" \
+                bz2 \
+                gd \
+                gmp \
+                ldap \
+                mysqli \
+                pdo_mysql \
+                pdo_pgsql \
+                pgsql \
+                zip \
+        ; 
+
+RUN a2enmod rewrite
+COPY . /var/www/html/
+# SSH server
+RUN apt-get install -y -q supervisor openssh-server
+RUN mkdir -p /var/run/sshd
+
+# Output supervisor config file to start openssh-server
+RUN echo "[program:openssh-server]" >> /etc/supervisor/conf.d/supervisord-openssh-server.conf
+RUN echo "command=/usr/sbin/sshd -D" >> /etc/supervisor/conf.d/supervisord-openssh-server.conf
+RUN echo "numprocs=1" >> /etc/supervisor/conf.d/supervisord-openssh-server.conf
+RUN echo "autostart=true" >> /etc/supervisor/conf.d/supervisord-openssh-server.conf
+RUN echo "autorestart=true" >> /etc/supervisor/conf.d/supervisord-openssh-server.conf
+
+# Allow root login via password
+# root password is: root
+RUN sed -ri 's/PermitRootLogin without-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
+
+# Set root password
+# password hash generated using this command: openssl passwd -1 -salt xampp root
+RUN sed -ri 's/root\:\*/root\:\$1\$xampp\$5\/7SXMYAMmS68bAy94B5f\./g' /etc/shadow
+
+# Few handy utilities which are nice to have
+RUN apt-get -y install nano vim less --no-install-recommends
+
+RUN apt-get clean
+
+EXPOSE 3306
+EXPOSE 22
+EXPOSE 80
+
