@@ -25,7 +25,6 @@ class JConfig {
 	public $ftp_host = '127.0.0.1';
 	public $ftp_port = '21';
 	public $ftp_user = 'admin';
-	public $ftp_pass = 'qwer9001';
 	public $ftp_root = '';
 	public $ftp_enable = '0';
 	public $offset = 'Europe/Sofia';
