@@ -59,3 +59,5 @@ htaccess.txt
 # Site Specific Stuff #
 #######################
 #/custom-folder/*
+/environments/*
+configuration.php
